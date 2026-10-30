@@ -10,34 +10,37 @@
     <ClCompile Include="GameMain.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="PLatform.cpp">
+    <ClCompile Include="Player.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="Ball.cpp">
+    <ClCompile Include="DeveloperLevel.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="GameState.cpp">
+    <ClCompile Include="AudioManager.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="Game.cpp">
+    <ClCompile Include="Enemy.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="Brick.cpp">
+    <ClCompile Include="EnemySearchComponent.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="DurableBrick.cpp">
+    <ClCompile Include="Wall.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="ScoreStrategy.cpp">
+    <ClCompile Include="WallContainer.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="GameMemento.cpp">
+    <ClCompile Include="Floor.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="BonusCommand.cpp">
+    <ClCompile Include="FloorContainer.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="Bonus.cpp">
+    <ClCompile Include="PlayerMovementComponent.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyContainer.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
   </ItemGroup>
@@ -45,38 +48,16 @@
     <ClInclude Include="Constants.h">
       <Filter>Sources</Filter>
     </ClInclude>
-    <ClInclude Include="Platform.h">
-      <Filter>Sources</Filter>
-    </ClInclude>
-    <ClInclude Include="Ball.h">
-      <Filter>Sources</Filter>
-    </ClInclude>
-    <ClInclude Include="GameState.h">
-      <Filter>Sources</Filter>
-    </ClInclude>
-    <ClInclude Include="Game.h">
-      <Filter>Sources</Filter>
-    </ClInclude>
-    <ClInclude Include="GameObject.h">
-      <Filter>Sources</Filter>
-    </ClInclude>
-    <ClInclude Include="Brick.h">
-      <Filter>Sources</Filter>
-    </ClInclude>
-    <ClInclude Include="DurableBrick.h">
-      <Filter>Sources</Filter>
-    </ClInclude>
-    <ClInclude Include="ScoreStrategy.h">
-      <Filter>Sources</Filter>
-    </ClInclude>
-    <ClInclude Include="GameMemento.h">
-      <Filter>Sources</Filter>
-    </ClInclude>
-    <ClInclude Include="BonusCommand.h">
-      <Filter>Sources</Filter>
-    </ClInclude>
-    <ClInclude Include="Bonus.h">
-      <Filter>Sources</Filter>
-    </ClInclude>
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="DeveloperLevel.h" />
+    <ClInclude Include="AudioManager.h" />
+    <ClInclude Include="Enemy.h" />
+    <ClInclude Include="EnemySearchComponent.h" />
+    <ClInclude Include="Wall.h" />
+    <ClInclude Include="WallContainer.h" />
+    <ClInclude Include="Floor.h" />
+    <ClInclude Include="FloorContainer.h" />
+    <ClInclude Include="PlayerMovementComponent.h" />
+    <ClInclude Include="EnemyContainer.h" />
   </ItemGroup>
 </Project>
