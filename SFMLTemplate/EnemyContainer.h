@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Enemy.h"
+
 #include <memory>
 #include <vector>
 
@@ -12,6 +13,8 @@ namespace XYZRoguelike
         explicit EnemyContainer(XYZEngine::GameObject* target);
 
         void CreateEnemies(XYZEngine::GameObject* target);
+
+        Enemy* GetNearestEnemy(XYZEngine::GameObject* target);
 
     private:
         std::vector<std::unique_ptr<Enemy>> enemies;

@@ -1,0 +1,3592 @@
+[INFO] Game application started.
+[INFO] Starting game level.
+[INFO] DeveloperLevel: initialization started.
+[INFO] Loading background music.
+[INFO] Loading player texture.
+[INFO] Loading enemy texture.
+[INFO] Loading floor texture.
+[INFO] Loading wall textures.
+[INFO] Creating floor container.
+[INFO] Creating wall container.
+[INFO] Creating player.
+[INFO] Creating enemy container.
+[INFO] DeveloperLevel: initialization completed.
+[INFO] Game level started successfully.
+[INFO] Stopping game level.
+[INFO] DeveloperLevel: stopping.
+[INFO] DeveloperLevel: stopped.
+[INFO] Game application stopped.
+[INFO] Game application started.
+[INFO] Starting game level.
+[INFO] DeveloperLevel: initialization started.
+[INFO] Loading background music.
+[INFO] Loading player texture.
+[INFO] Loading enemy texture.
+[INFO] Loading floor texture.
+[INFO] Loading wall textures.
+[INFO] Creating floor container.
+[INFO] Creating wall container.
+[INFO] Creating player.
+[INFO] HealthComponent initialized
+[INFO] Creating Player
+[INFO] Player created successfully
+[INFO] Creating enemy container.
+[INFO] HealthComponent initialized
+[INFO] Creating Enemy
+[INFO] Enemy created successfully
+[INFO] DeveloperLevel: initialization completed.
+[INFO] Game level started successfully.
+[INFO] Stopping game level.
+[INFO] DeveloperLevel: stopping.
+[INFO] DeveloperLevel: stopped.
+[INFO] Game application stopped.
+[INFO] Game application started.
+[INFO] Starting game level.
+[INFO] DeveloperLevel: initialization started.
+[INFO] Loading background music.
+[INFO] Loading player texture.
+[INFO] Loading enemy texture.
+[INFO] Loading floor texture.
+[INFO] Loading wall textures.
+[INFO] Creating floor container.
+[INFO] Creating wall container.
+[INFO] Creating player.
+[INFO] HealthComponent initialized
+[INFO] Creating Player
+[INFO] Player created successfully
+[INFO] Creating enemy container.
+[INFO] HealthComponent initialized
+[INFO] Creating Enemy
+[INFO] Enemy created successfully
+[INFO] DeveloperLevel: initialization completed.
+[INFO] Game level started successfully.
+[INFO] Game application started.
+[INFO] Starting game level.
+[INFO] DeveloperLevel: initialization started.
+[INFO] Loading background music.
+[INFO] Loading player texture.
+[INFO] Loading enemy texture.
+[INFO] Loading floor texture.
+[INFO] Loading wall textures.
+[INFO] Creating floor container.
+[INFO] Creating wall container.
+[INFO] Creating player.
+[INFO] HealthComponent initialized
+[INFO] Creating Player
+[INFO] Player created successfully
+[INFO] Creating enemy container.
+[INFO] HealthComponent initialized
+[INFO] Creating Enemy
+[INFO] Enemy created successfully
+[INFO] DeveloperLevel: initialization completed.
+[INFO] Game level started successfully.
+[INFO] Stopping game level.
+[INFO] DeveloperLevel: stopping.
+[INFO] DeveloperLevel: stopped.
+[INFO] Game application stopped.
+[INFO] Game application started.
+[INFO] Starting game level.
+[INFO] DeveloperLevel: initialization started.
+[INFO] Loading background music.
+[INFO] Loading player texture.
+[INFO] Loading enemy texture.
+[INFO] Loading floor texture.
+[INFO] Loading wall textures.
+[INFO] Creating floor container.
+[INFO] Creating wall container.
+[INFO] Creating player.
+[INFO] HealthComponent initialized
+[INFO] Creating enemy container.
+[INFO] HealthComponent initialized
+[INFO] DeveloperLevel: initialization completed.
+[INFO] Game level started successfully.
+[INFO] Game application started.
+[INFO] Starting game level.
+[INFO] DeveloperLevel: initialization started.
+[INFO] Loading background music.
+[INFO] Loading player texture.
+[INFO] Loading enemy texture.
+[INFO] Loading floor texture.
+[INFO] Loading wall textures.
+[INFO] Creating floor container.
+[INFO] Creating wall container.
+[INFO] Creating player.
+[INFO] HealthComponent initialized
+[INFO] Creating enemy container.
+[INFO] HealthComponent initialized
+[INFO] DeveloperLevel: initialization completed.
+[INFO] Game level started successfully.
+[INFO] Entity received damage
+[INFO] Player attacked enemy
+[INFO] Entity received damage
+[INFO] Player attacked enemy
+[INFO] Entity received damage
+[INFO] Player attacked enemy
+[INFO] Entity received damage
+[ERROR] Entity died
+[INFO] Player attacked enemy
+[INFO] Stopping game level.
+[INFO] DeveloperLevel: stopping.
+[INFO] DeveloperLevel: stopped.
+[INFO] Game application stopped.
+[INFO] Game application started.
+[INFO] Starting game level.
+[INFO] DeveloperLevel: initialization started.
+[INFO] Loading background music.
+[INFO] Loading player texture.
+[INFO] Loading enemy texture.
+[INFO] Loading floor texture.
+[INFO] Loading wall textures.
+[INFO] Creating floor container.
+[INFO] Creating wall container.
+[INFO] Creating player.
+[INFO] HealthComponent initialized
+[INFO] Creating enemy container.
+[INFO] HealthComponent initialized
+[INFO] DeveloperLevel: initialization completed.
+[INFO] Game level started successfully.
+[INFO] Entity received damage
+[INFO] Player attacked enemy
+[INFO] Entity received damage
+[INFO] Player attacked enemy
+[INFO] Entity received damage
+[INFO] Player attacked enemy
+[INFO] Entity received damage
+[ERROR] Entity died
+[INFO] Player attacked enemy
+[INFO] Stopping game level.
+[INFO] DeveloperLevel: stopping.
+[INFO] DeveloperLevel: stopped.
+[INFO] Game application stopped.
+[INFO] Game application started.
+[INFO] Starting game level.
+[INFO] DeveloperLevel: initialization started.
+[INFO] Loading background music.
+[INFO] Loading player texture.
+[INFO] Loading enemy texture.
+[INFO] Loading floor texture.
+[INFO] Loading wall textures.
+[INFO] Creating floor container.
+[INFO] Creating wall container.
+[INFO] Creating player.
+[INFO] HealthComponent initialized
+[INFO] Creating enemy container.
+[INFO] HealthComponent initialized
+[INFO] Enemy spawned
+[INFO] HealthComponent initialized
+[INFO] Enemy spawned
+[INFO] HealthComponent initialized
+[INFO] Enemy spawned
+[INFO] Enemies created
+[INFO] DeveloperLevel: initialization completed.
+[INFO] Game level started successfully.
+[INFO] Entity received damage
+[INFO] Player attacked enemy
+[INFO] Entity received damage
+[INFO] Player attacked enemy
+[INFO] Entity received damage
+[INFO] Player attacked enemy
+[INFO] Entity received damage
+[ERROR] Entity died
+[INFO] Player attacked enemy
+[INFO] Entity received damage
+[INFO] Player attacked enemy
+[INFO] Entity received damage
+[INFO] Player attacked enemy
+[INFO] Entity received damage
+[INFO] Player attacked enemy
+[INFO] Entity received damage
+[ERROR] Entity died
+[INFO] Player attacked enemy
+[INFO] Entity received damage
+[INFO] Player attacked enemy
+[INFO] Entity received damage
+[INFO] Player attacked enemy
+[INFO] Entity received damage
+[INFO] Player attacked enemy
+[INFO] Entity received damage
+[ERROR] Entity died
+[INFO] Player attacked enemy
+[INFO] Game application started.
+[INFO] Starting game level.
+[INFO] DeveloperLevel: initialization started.
+[INFO] HealthComponent initialized
+[INFO] HealthComponent initialized
+[INFO] Enemy spawned
+[INFO] HealthComponent initialized
+[INFO] Enemy spawned
+[INFO] HealthComponent initialized
+[INFO] Enemy spawned
+[INFO] Enemies created
+[INFO] DeveloperLevel: initialization completed.
+[INFO] Game level started successfully.
+[INFO] Entity received damage
+[INFO] Player attacked enemy
+[INFO] Entity received damage
+[INFO] Player attacked enemy
+[INFO] Entity received damage
+[INFO] Player attacked enemy
+[INFO] Entity received damage
+[INFO] Player attacked enemy
+[INFO] Entity received damage
+[INFO] Player attacked enemy
+[INFO] Entity received damage
+[INFO] Player attacked enemy
+[INFO] Stopping game level.
+[INFO] DeveloperLevel: stopping.
+[INFO] DeveloperLevel: stopped.
+[INFO] Game application stopped.
+[INFO] Logger initialized
+[INFO] DeveloperLevel initialization started
+[INFO] HealthComponent initialized
+[INFO] Player created
+[INFO] HealthComponent initialized
+[INFO] Enemy created
+[INFO] EnemyContainer initialized
+[INFO] DeveloperLevel initialization completed
+[INFO] Game started
+[INFO] Entity received damage
+[INFO] Player attacked enemy
+[INFO] Entity received damage
+[INFO] Player attacked enemy
+[INFO] Entity received damage
+[INFO] Player attacked enemy
+[INFO] Entity received damage
+[ERROR] Entity died
+[INFO] Player attacked enemy
+[INFO] DeveloperLevel stopping
+[INFO] DeveloperLevel stopped
+[INFO] Game stopped
+[INFO] Logger initialized
+[INFO] DeveloperLevel initialization started
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] HealthComponent initialized
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Player created
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] HealthComponent initialized
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Enemy created
+[INFO] EnemyContainer initialized
+[INFO] DeveloperLevel initialization completed
+[INFO] Game started
+[INFO] Entity received damage
+[INFO] Player attacked enemy
+[INFO] Entity received damage
+[INFO] Player attacked enemy
+[INFO] Entity received damage
+[INFO] Player attacked enemy
+[INFO] Entity received damage
+[ERROR] Entity died
+[INFO] Player attacked enemy
+[INFO] Logger initialized
+[INFO] DeveloperLevel initialization started
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] HealthComponent initialized
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Player created
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] HealthComponent initialized
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Enemy created
+[INFO] EnemyContainer initialized
+[INFO] DeveloperLevel initialization completed
+[INFO] Game started
+[INFO] Logger initialized
+[INFO] DeveloperLevel initialization started
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] HealthComponent initialized
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Player created
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] HealthComponent initialized
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Enemy created
+[INFO] EnemyContainer initialized
+[INFO] DeveloperLevel initialization completed
+[INFO] Game started
+[INFO] Entity received damage
+[INFO] Player attacked enemy
+[INFO] Entity received damage
+[INFO] Player attacked enemy
+[INFO] Entity received damage
+[INFO] Enemy attacked player
+[INFO] Entity received damage
+[INFO] Enemy attacked player
+[INFO] Entity received damage
+[INFO] Enemy attacked player
+[INFO] Entity received damage
+[INFO] Enemy attacked player
+[INFO] Entity received damage
+[INFO] Enemy attacked player
+[INFO] Entity received damage
+[INFO] Enemy attacked player
+[INFO] Entity received damage
+[INFO] Enemy attacked player
+[INFO] Entity received damage
+[INFO] Enemy attacked player
+[INFO] Entity received damage
+[INFO] Enemy attacked player
+[INFO] Entity received damage
+[INFO] Enemy attacked player
+[INFO] Entity received damage
+[INFO] Enemy attacked player
+[INFO] Entity received damage
+[INFO] Enemy attacked player
+[INFO] Entity received damage
+[ERROR] Entity died
+[INFO] Enemy attacked player
+[INFO] Entity received damage
+[INFO] Player attacked enemy
+[INFO] Entity received damage
+[ERROR] Entity died
+[INFO] Player attacked enemy
+[INFO] Logger initialized
+[INFO] DeveloperLevel initialization started
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] HealthComponent initialized
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Player created
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] HealthComponent initialized
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Enemy created
+[INFO] EnemyContainer initialized
+[INFO] DeveloperLevel initialization completed
+[INFO] Game started
+[INFO] Logger initialized
+[INFO] DeveloperLevel initialization started
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] HealthComponent initialized
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Player created
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] HealthComponent initialized
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Enemy created
+[INFO] EnemyContainer initialized
+[INFO] DeveloperLevel initialization completed
+[INFO] Game started
+[INFO] DeveloperLevel stopping
+[INFO] DeveloperLevel stopped
+[INFO] Game stopped
+[INFO] Logger initialized
+[INFO] DeveloperLevel initialization started
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] HealthComponent initialized
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Player created
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] HealthComponent initialized
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Enemy created
+[INFO] EnemyContainer initialized
+[INFO] DeveloperLevel initialization completed
+[INFO] Game started
+[INFO] Logger initialized
+[INFO] DeveloperLevel initialization started
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] HealthComponent initialized
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Player created
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] HealthComponent initialized
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Enemy created
+[INFO] EnemyContainer initialized
+[INFO] DeveloperLevel initialization completed
+[INFO] Game started
+[INFO] Logger initialized
+[INFO] DeveloperLevel initialization started
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] HealthComponent initialized
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Player created
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] HealthComponent initialized
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Enemy created
+[INFO] EnemyContainer initialized
+[INFO] DeveloperLevel initialization completed
+[INFO] Game started
+[INFO] Entity received damage
+[INFO] Enemy attacked player
+[INFO] Entity received damage
+[INFO] Enemy attacked player
+[INFO] Entity received damage
+[INFO] Enemy attacked player
+[INFO] Entity received damage
+[INFO] Enemy attacked player
+[INFO] Entity received damage
+[INFO] Enemy attacked player
+[INFO] Entity received damage
+[INFO] Enemy attacked player
+[INFO] Entity received damage
+[INFO] Enemy attacked player
+[INFO] Entity received damage
+[INFO] Enemy attacked player
+[INFO] Entity received damage
+[INFO] Enemy attacked player
+[INFO] Entity received damage
+[INFO] Enemy attacked player
+[INFO] Entity received damage
+[INFO] Enemy attacked player
+[INFO] Entity received damage
+[INFO] Enemy attacked player
+[INFO] Entity received damage
+[ERROR] Entity died
+[INFO] Enemy attacked player
+[INFO] DeveloperLevel stopping
+[INFO] DeveloperLevel stopped
+[INFO] Game stopped
+[INFO] Logger initialized
+[INFO] DeveloperLevel initialization started
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] HealthComponent initialized
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Player created
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] HealthComponent initialized
+[INFO] Component added to GameObject
+[INFO] Component added to GameObject
+[INFO] Enemy created
+[INFO] EnemyContainer initialized
+[INFO] DeveloperLevel initialization completed
+[INFO] Game started
+[INFO] Entity received damage
+[INFO] Enemy attacked player
+[INFO] Entity received damage
+[INFO] Enemy attacked player
+[INFO] Entity received damage
+[INFO] Enemy attacked player
+[INFO] Entity received damage
+[INFO] Enemy attacked player
+[INFO] Entity received damage
+[INFO] Enemy attacked player
+[INFO] Entity received damage
+[INFO] Enemy attacked player
+[INFO] Entity received damage
+[INFO] Enemy attacked player
+[INFO] Entity received damage
+[INFO] Enemy attacked player

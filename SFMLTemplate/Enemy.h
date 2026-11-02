@@ -6,6 +6,7 @@
 #include "TransformComponent.h"
 #include "ResourceSystem.h"
 #include "EnemySearchComponent.h"
+#include "HealthComponent.h"
 
 namespace XYZRoguelike
 {
@@ -15,6 +16,7 @@ namespace XYZRoguelike
         Enemy(XYZEngine::GameObject* player);
 
         XYZEngine::GameObject* GetGameObject();
+        HealthComponent* GetHealthComponent();
 
         void Update(float deltaTime);
 
