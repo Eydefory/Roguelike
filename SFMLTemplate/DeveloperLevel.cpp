@@ -4,90 +4,79 @@
 #include "ResourceSystem.h"
 #include "GameWorld.h"
 #include "AudioManager.h"
+#include "Loger.h"
 
 namespace XYZRoguelike
 {
     void DeveloperLevel::Start()
     {
-        XYZEngine::ResourceSystem* resources =
+        LOG_INFO("DeveloperLevel initialization started");
+
+        auto resources =
             XYZEngine::ResourceSystem::Instance();
 
-        AudioManager::Instance().PlayMusic("Resources/Music/music.ogg");
+        AudioManager::Instance().PlayMusic(
+            "Resources/Music/music.ogg");
 
         resources->LoadTexture(
             "player",
-            "Resources/Textures/player.png"
-        );
+            "Resources/Textures/player.png");
 
         resources->LoadTexture(
             "enemy",
-            "Resources/Textures/enemy.png"
-        );
+            "Resources/Textures/enemy.png");
 
         resources->LoadTexture(
             "floor",
-            "Resources/Textures/floor.png"
-        );
+            "Resources/Textures/floor.png");
 
         resources->LoadTexture(
             "wall_top",
-            "Resources/Textures/wall_top.png"
-        );
+            "Resources/Textures/wall_top.png");
 
         resources->LoadTexture(
             "wall_top_alt",
-            "Resources/Textures/wall_top_alt.png"
-        );
+            "Resources/Textures/wall_top_alt.png");
 
         resources->LoadTexture(
             "wall_bottom",
-            "Resources/Textures/wall_bottom.png"
-        );
+            "Resources/Textures/wall_bottom.png");
 
         resources->LoadTexture(
             "wall_bottom_alt",
-            "Resources/Textures/wall_bottom_alt.png"
-        );
+            "Resources/Textures/wall_bottom_alt.png");
 
         resources->LoadTexture(
             "wall_left",
-            "Resources/Textures/wall_left.png"
-        );
+            "Resources/Textures/wall_left.png");
 
         resources->LoadTexture(
             "wall_left_alt",
-            "Resources/Textures/wall_left_alt.png"
-        );
+            "Resources/Textures/wall_left_alt.png");
 
         resources->LoadTexture(
             "wall_right",
-            "Resources/Textures/wall_right.png"
-        );
+            "Resources/Textures/wall_right.png");
 
         resources->LoadTexture(
             "wall_right_alt",
-            "Resources/Textures/wall_right_alt.png"
-        );
+            "Resources/Textures/wall_right_alt.png");
 
         resources->LoadTexture(
             "wall_top_left",
-            "Resources/Textures/wall_top_left.png"
-        );
+            "Resources/Textures/wall_top_left.png");
 
         resources->LoadTexture(
             "wall_top_right",
-            "Resources/Textures/wall_top_right.png"
-        );
+            "Resources/Textures/wall_top_right.png");
 
         resources->LoadTexture(
             "wall_bottom_left",
-            "Resources/Textures/wall_bottom_left.png"
-        );
+            "Resources/Textures/wall_bottom_left.png");
 
         resources->LoadTexture(
             "wall_bottom_right",
-            "Resources/Textures/wall_bottom_right.png"
-        );
+            "Resources/Textures/wall_bottom_right.png");
 
         floorContainer = std::make_unique<FloorContainer>();
         wallContainer = std::make_unique<WallContainer>();
@@ -95,18 +84,25 @@ namespace XYZRoguelike
         player = std::make_shared<Player>();
 
         enemyContainer = std::make_unique<EnemyContainer>(
-            player->GetGameObject()
-        );
+            player->GetGameObject());
+
+        player->SetEnemyContainer(enemyContainer.get());
+
+        LOG_INFO("DeveloperLevel initialization completed");
     }
 
     void DeveloperLevel::Restart()
     {
+        LOG_INFO("DeveloperLevel restarting");
+
         Stop();
         Start();
     }
 
     void DeveloperLevel::Stop()
     {
+        LOG_INFO("DeveloperLevel stopping");
+
         AudioManager::Instance().StopMusic();
 
         XYZEngine::GameWorld::Instance()->Clear();
@@ -115,5 +111,7 @@ namespace XYZRoguelike
         wallContainer.reset();
         floorContainer.reset();
         player.reset();
+
+        LOG_INFO("DeveloperLevel stopped");
     }
 }

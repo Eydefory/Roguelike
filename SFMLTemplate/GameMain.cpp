@@ -5,29 +5,70 @@
 #include "ResourceSystem.h"
 #include "DeveloperLevel.h"
 #include "GameWorld.h"
+#include "Loger.h"
+
+#include <memory>
+#include <exception>
 
 using namespace XYZRoguelike;
 
 int main()
-{
-    auto window = new sf::RenderWindow(
-        sf::VideoMode(1280, 720),
-        "XYZ Roguelike"
-    );
+{ auto logger = std::make_shared<Logger>();
 
-    window->setFramerateLimit(60);
+    logger->addSink(std::make_shared<ConsoleSink>());
 
-    XYZEngine::RenderSystem::Instance()->SetMainWindow(window);
+    auto fileSink = std::make_shared<FileSink>("game.log");
 
-    auto level = std::make_shared<DeveloperLevel>();
+    if (!fileSink->IsOpen())
+    {
+        std::cerr << "WARNING: game.log could not be opened."
+            << std::endl;
+    }
 
-    level->Start();
+    logger->addSink(fileSink);
 
-    XYZEngine::Engine::Instance()->Run();
+    LoggerRegistry::getInstance()
+        .setDefaultLogger(logger);
 
-    level->Stop();
+    LoggerRegistry::getInstance()
+        .registerLogger("global", logger);
 
-    XYZEngine::ResourceSystem::Instance()->Clear();
+    LOG_INFO("Logger initialized");
+
+    try
+    {
+        auto* window = new sf::RenderWindow(
+            sf::VideoMode(1280, 720),
+            "XYZ Roguelike");
+
+        window->setFramerateLimit(60);
+
+        XYZEngine::RenderSystem::Instance()
+            ->SetMainWindow(window);
+
+        auto level = std::make_shared<DeveloperLevel>();
+
+        level->Start();
+
+        LOG_INFO("Game started");
+
+        XYZEngine::Engine::Instance()->Run();
+
+        level->Stop();
+
+        XYZEngine::ResourceSystem::Instance()->Clear();
+
+        LOG_INFO("Game stopped");
+    }
+    catch (const std::exception& exception)
+    {
+        LOG_ERROR(std::string("Critical exception: ") +
+            exception.what());
+    }
+    catch (...)
+    {
+        LOG_ERROR("Unknown critical exception");
+    }
 
     return 0;
 }

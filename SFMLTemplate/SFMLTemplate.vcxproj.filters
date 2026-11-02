@@ -43,6 +43,15 @@
     <ClCompile Include="EnemyContainer.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
+    <ClCompile Include="PlayerAttackComponent.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="HealthBarComponent.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyAttackComponent.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Constants.h">
@@ -59,5 +68,11 @@
     <ClInclude Include="FloorContainer.h" />
     <ClInclude Include="PlayerMovementComponent.h" />
     <ClInclude Include="EnemyContainer.h" />
+    <ClInclude Include="HealthComponent.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerAttackComponent.h" />
+    <ClInclude Include="HealthBarComponent.h" />
+    <ClInclude Include="EnemyAttackComponent.h" />
   </ItemGroup>
 </Project>

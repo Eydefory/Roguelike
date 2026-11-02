@@ -183,6 +183,7 @@ copy /Y "$(TargetPath)" "$(SolutionDir)SFMLTemplate\$(Platform)\$(Configuration)
     <ClInclude Include="IDelayedAction.h" />
     <ClInclude Include="InputComponent.h" />
     <ClInclude Include="IObserver.h" />
+    <ClInclude Include="Loger.h" />
     <ClInclude Include="Matrix2D.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="PhysicsSystem.h" />

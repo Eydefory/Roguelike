@@ -3,12 +3,15 @@
 #include "EngineAPI.h"
 #include "Component.h"
 #include "TransformComponent.h"
+#include "Loger.h"
 
 #include <iostream>
 #include <string>
 #include <vector>
 #include <algorithm>
 #include <type_traits>
+#include <cassert>
+#include <stdexcept>
 
 namespace XYZEngine
 {
@@ -19,7 +22,6 @@ namespace XYZEngine
     public:
         GameObject();
         GameObject(std::string newName);
-
         ~GameObject();
 
         std::string GetName() const;
@@ -34,30 +36,67 @@ namespace XYZEngine
             static_assert(std::is_base_of<Component, T>::value,
                 "T must be derived from Component.");
 
+            assert(!name.empty());
+
             if constexpr (std::is_same<T, TransformComponent>::value)
             {
                 if (GetComponent<TransformComponent>() != nullptr)
                 {
-                    std::cout << "Can't add Transform, because it will break the engine loop." << std::endl;
-                    return nullptr;
+                    LOG_ERROR("Cannot add duplicate TransformComponent");
+
+                    throw std::runtime_error(
+                        "GameObject already has TransformComponent");
                 }
             }
 
-            T* newComponent = new T(this);
-            components.push_back(newComponent);
+            try
+            {
+                T* newComponent = new T(this);
 
-            return newComponent;
+                if (newComponent == nullptr)
+                {
+                    LOG_ERROR("Component allocation failed");
+                    throw std::runtime_error("Component allocation failed");
+                }
+
+                components.push_back(newComponent);
+
+                LOG_INFO("Component added to GameObject");
+
+                return newComponent;
+            }
+            catch (const std::exception& exception)
+            {
+                LOG_ERROR(std::string("AddComponent failed: ") +
+                    exception.what());
+
+                throw;
+            }
         }
 
         void RemoveComponent(Component* component)
         {
-            auto it = std::find(components.begin(), components.end(), component);
+            if (component == nullptr)
+            {
+                LOG_WARN("Cannot remove null component");
+                return;
+            }
+
+            auto it = std::find(
+                components.begin(),
+                components.end(),
+                component);
 
             if (it != components.end())
             {
                 components.erase(it);
                 delete component;
-                std::cout << "Deleted component" << std::endl;
+
+                LOG_INFO("Component removed");
+            }
+            else
+            {
+                LOG_WARN("Component not found");
             }
         }
 
@@ -67,9 +106,7 @@ namespace XYZEngine
             for (const auto& component : components)
             {
                 if (auto casted = dynamic_cast<T*>(component))
-                {
                     return casted;
-                }
             }
 
             return nullptr;
@@ -81,18 +118,15 @@ namespace XYZEngine
             T* component = GetComponent<T>();
 
             if (component != nullptr || children.empty())
-            {
                 return component;
-            }
 
             for (const auto& child : children)
             {
-                T* childComponent = child->GetComponentInChildren<T>();
+                T* childComponent =
+                    child->GetComponentInChildren<T>();
 
                 if (childComponent != nullptr)
-                {
                     return childComponent;
-                }
             }
 
             return nullptr;
@@ -106,9 +140,7 @@ namespace XYZEngine
             for (const auto& component : components)
             {
                 if (auto casted = dynamic_cast<T*>(component))
-                {
                     result.push_back(casted);
-                }
             }
 
             return result;
@@ -120,13 +152,12 @@ namespace XYZEngine
             std::vector<T*> result;
 
             for (const auto& component : GetComponents<T>())
-            {
                 result.push_back(component);
-            }
 
             for (const auto& child : children)
             {
-                for (const auto& childComponent : child->GetComponentsInChildren<T>())
+                for (const auto& childComponent :
+                    child->GetComponentsInChildren<T>())
                 {
                     result.push_back(childComponent);
                 }
