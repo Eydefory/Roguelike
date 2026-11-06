@@ -1,9 +1,9 @@
 #pragma once
 
 #include <SFML/Audio.hpp>
-#include <string>
 #include <map>
 #include <memory>
+#include <string>
 
 namespace XYZRoguelike
 {
@@ -24,4 +24,4 @@ namespace XYZRoguelike
         sf::Music music;
         std::map<std::string, std::unique_ptr<sf::Sound>> sounds;
     };
-}
+} // namespace XYZRoguelike

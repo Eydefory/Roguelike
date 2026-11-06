@@ -1,13 +1,13 @@
 #pragma once
 
-#include "GameWorld.h"
-#include "SpriteRendererComponent.h"
-#include "SpriteColliderComponent.h"
-#include "InputComponent.h"
 #include "CameraComponent.h"
+#include "GameWorld.h"
+#include "HealthComponent.h"
+#include "InputComponent.h"
 #include "RenderSystem.h"
 #include "ResourceSystem.h"
-#include "HealthComponent.h"
+#include "SpriteColliderComponent.h"
+#include "SpriteRendererComponent.h"
 
 namespace XYZRoguelike
 {
@@ -30,4 +30,4 @@ namespace XYZRoguelike
         XYZEngine::GameObject* gameObject;
         float movementSpeed;
     };
-}
+} // namespace XYZRoguelike

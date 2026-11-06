@@ -19,6 +19,12 @@
     <ClCompile Include="AudioManager.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
+    <ClCompile Include="Creeper.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CreeperSpawner.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
     <ClCompile Include="Enemy.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
@@ -52,9 +58,18 @@
     <ClCompile Include="EnemyAttackComponent.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
+    <ClCompile Include="MazeGenerator.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Constants.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="Creeper.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="CreeperSpawner.h">
       <Filter>Sources</Filter>
     </ClInclude>
     <ClInclude Include="Player.h" />
@@ -74,5 +89,6 @@
     <ClInclude Include="PlayerAttackComponent.h" />
     <ClInclude Include="HealthBarComponent.h" />
     <ClInclude Include="EnemyAttackComponent.h" />
+    <ClInclude Include="MazeGenerator.h" />
   </ItemGroup>
 </Project>

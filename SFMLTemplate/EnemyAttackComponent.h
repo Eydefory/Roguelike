@@ -13,6 +13,7 @@ namespace XYZRoguelike
         void Render() override;
 
         void SetTarget(XYZEngine::GameObject* target);
+        void SetAttackSettings(int damage, float cooldown, float attackDistance);
 
     private:
         XYZEngine::GameObject* target;
@@ -20,5 +21,6 @@ namespace XYZRoguelike
         float attackCooldown;
         float attackTimer;
         float attackDistance;
+        int attackDamage;
     };
-}
+} // namespace XYZRoguelike

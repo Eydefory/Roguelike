@@ -1,8 +1,8 @@
 #pragma once
 
 #include "Floor.h"
-#include <vector>
 #include <memory>
+#include <vector>
 
 namespace XYZRoguelike
 {
@@ -10,10 +10,10 @@ namespace XYZRoguelike
     {
     public:
         FloorContainer();
-
         void CreateFloor();
+        void AddFloor(std::unique_ptr<Floor> floor);
 
     private:
         std::vector<std::unique_ptr<Floor>> tiles;
     };
-}
+} // namespace XYZRoguelike

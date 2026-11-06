@@ -1,10 +1,11 @@
+
 #pragma once
 
-#include "Scene.h"
-#include "Player.h"
 #include "EnemyContainer.h"
-#include "WallContainer.h"
 #include "FloorContainer.h"
+#include "Player.h"
+#include "Scene.h"
+#include "WallContainer.h"
 
 #include <memory>
 
@@ -17,6 +18,21 @@ namespace XYZRoguelike
         void Restart() override;
         void Stop() override;
 
+        FloorContainer* GetFloorContainer() const
+        {
+            return floorContainer.get();
+        }
+
+        WallContainer* GetWallContainer() const
+        {
+            return wallContainer.get();
+        }
+
+        Player* GetPlayer() const
+        {
+            return player.get();
+        }
+
     private:
         std::shared_ptr<Player> player;
 
@@ -24,4 +40,4 @@ namespace XYZRoguelike
         std::unique_ptr<WallContainer> wallContainer;
         std::unique_ptr<FloorContainer> floorContainer;
     };
-}
+} // namespace XYZRoguelike

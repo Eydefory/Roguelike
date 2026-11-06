@@ -24,4 +24,4 @@ namespace XYZRoguelike
 
         void UpdateBars();
     };
-}
+} // namespace XYZRoguelike

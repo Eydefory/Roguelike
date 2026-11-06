@@ -1,18 +1,15 @@
 #include "EnemySearchComponent.h"
 #include "Constants.h"
 
-#include <cmath>
 #include <algorithm>
+#include <cmath>
+#include <stdexcept>
 
 namespace XYZRoguelike
 {
     EnemySearchComponent::EnemySearchComponent(XYZEngine::GameObject* gameObject)
-        : Component(gameObject),
-        target(nullptr),
-        detectionRadius(ENEMY_DETECTION_RADIUS),
-        movementSpeed(ENEMY_SPEED),
-        stopDistance(ENEMY_STOP_DISTANCE),
-        targetDetected(false)
+        : Component(gameObject), target(nullptr), detectionRadius(ENEMY_DETECTION_RADIUS),
+          movementSpeed(ENEMY_SPEED), stopDistance(ENEMY_STOP_DISTANCE), targetDetected(false)
     {
     }
 
@@ -24,11 +21,9 @@ namespace XYZRoguelike
             return;
         }
 
-        auto enemyTransform =
-            GetGameObject()->GetComponent<XYZEngine::TransformComponent>();
+        auto enemyTransform = GetGameObject()->GetComponent<XYZEngine::TransformComponent>();
 
-        auto targetTransform =
-            target->GetComponent<XYZEngine::TransformComponent>();
+        auto targetTransform = target->GetComponent<XYZEngine::TransformComponent>();
 
         if (enemyTransform == nullptr || targetTransform == nullptr)
             return;
@@ -54,10 +49,7 @@ namespace XYZRoguelike
 
         enemyTransform->MoveBy(moveX, moveY);
 
-        
         auto position = enemyTransform->GetWorldPosition();
-
-        constexpr float halfEnemy = 24.f;
 
         float minX = ROOM_MIN_ENEMY_X;
         float maxX = ROOM_MAX_ENEMY_X;
@@ -74,13 +66,26 @@ namespace XYZRoguelike
         }
     }
 
-    void EnemySearchComponent::Render()
-    {
-    }
+    void EnemySearchComponent::Render() {}
 
     void EnemySearchComponent::SetTarget(XYZEngine::GameObject* newTarget)
     {
         target = newTarget;
+    }
+
+    void EnemySearchComponent::SetMovementSettings(float newDetectionRadius, float newMovementSpeed,
+                                                   float newStopDistance)
+    {
+        if (newDetectionRadius <= 0.f || newMovementSpeed < 0.f || newStopDistance < 0.f ||
+            !std::isfinite(newDetectionRadius) || !std::isfinite(newMovementSpeed) ||
+            !std::isfinite(newStopDistance))
+        {
+            throw std::invalid_argument("Enemy movement settings are invalid");
+        }
+
+        detectionRadius = newDetectionRadius;
+        movementSpeed = newMovementSpeed;
+        stopDistance = newStopDistance;
     }
 
     bool EnemySearchComponent::IsTargetDetected() const
@@ -92,4 +97,4 @@ namespace XYZRoguelike
     {
         return target;
     }
-}
+} // namespace XYZRoguelike

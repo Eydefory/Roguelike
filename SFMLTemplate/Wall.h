@@ -15,4 +15,4 @@ namespace XYZRoguelike
     private:
         XYZEngine::GameObject* gameObject = nullptr;
     };
-}
+} // namespace XYZRoguelike

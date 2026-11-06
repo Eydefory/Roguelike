@@ -1,12 +1,10 @@
 #include "HealthBarComponent.h"
-#include "RenderSystem.h"
 #include "GameObject.h"
+#include "RenderSystem.h"
 namespace XYZRoguelike
 {
-    HealthBarComponent::HealthBarComponent(
-        XYZEngine::GameObject* gameObject)
-        : Component(gameObject),
-        healthComponent(nullptr)
+    HealthBarComponent::HealthBarComponent(XYZEngine::GameObject* gameObject)
+        : Component(gameObject), healthComponent(nullptr)
     {
         background.setSize(sf::Vector2f(300.f, 24.f));
         background.setFillColor(sf::Color(40, 40, 40));
@@ -20,8 +18,7 @@ namespace XYZRoguelike
         armorBar.setFillColor(sf::Color(60, 150, 230));
         armorBar.setPosition(20.f, 45.f);
 
-        healthComponent =
-            gameObject->GetComponent<HealthComponent>();
+        healthComponent = gameObject->GetComponent<HealthComponent>();
     }
 
     void HealthBarComponent::Update(float deltaTime)
@@ -31,8 +28,7 @@ namespace XYZRoguelike
 
     void HealthBarComponent::Render()
     {
-        auto& window =
-            XYZEngine::RenderSystem::Instance()->GetMainWindow();
+        auto& window = XYZEngine::RenderSystem::Instance()->GetMainWindow();
 
         window.draw(background);
         window.draw(healthBar);
@@ -45,20 +41,16 @@ namespace XYZRoguelike
             return;
 
         float healthPercent =
-            static_cast<float>(healthComponent->GetHealth()) /
-            healthComponent->GetMaxHealth();
+            static_cast<float>(healthComponent->GetHealth()) / healthComponent->GetMaxHealth();
 
         healthPercent = std::max(0.f, std::min(1.f, healthPercent));
 
-        healthBar.setSize(
-            sf::Vector2f(300.f * healthPercent, 24.f));
+        healthBar.setSize(sf::Vector2f(300.f * healthPercent, 24.f));
 
-        float armorPercent =
-            static_cast<float>(healthComponent->GetArmor()) / 25.f;
+        float armorPercent = static_cast<float>(healthComponent->GetArmor()) / 25.f;
 
         armorPercent = std::max(0.f, std::min(1.f, armorPercent));
 
-        armorBar.setSize(
-            sf::Vector2f(300.f * armorPercent, 5.f));
+        armorBar.setSize(sf::Vector2f(300.f * armorPercent, 5.f));
     }
-}
+} // namespace XYZRoguelike

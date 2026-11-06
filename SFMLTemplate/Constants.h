@@ -24,30 +24,40 @@ namespace XYZRoguelike
 
     constexpr float ENEMY_DETECTION_RADIUS = 300.f;
     constexpr float ENEMY_STOP_DISTANCE = 55.f;
+    constexpr int ENEMY_MAX_HEALTH = 60;
+    constexpr int ENEMY_ARMOR = 10;
+    constexpr int ENEMY_DAMAGE = 10;
+    constexpr float ENEMY_ATTACK_COOLDOWN = 1.f;
+    constexpr float ENEMY_ATTACK_DISTANCE = 55.f;
 
-    
-    constexpr float ROOM_MIN_PLAYER_X =
-        ROOM_OFFSET_X + TILE_SIZE + PLAYER_WIDTH * 0.5f;
+    constexpr int CREEPER_MAX_HEALTH = 80;
+    constexpr int CREEPER_ARMOR = 0;
+    constexpr int CREEPER_DAMAGE = 15;
+    constexpr float CREEPER_SPEED = 140.f;
+    constexpr float CREEPER_DETECTION_RADIUS = 360.f;
+    constexpr float CREEPER_STOP_DISTANCE = 48.f;
+    constexpr float CREEPER_ATTACK_COOLDOWN = 1.5f;
+    constexpr float CREEPER_ATTACK_DISTANCE = 60.f;
+    constexpr unsigned int CREEPER_SPAWN_COUNT = 5;
+    constexpr float CREEPER_MIN_PLAYER_DISTANCE = 200.f;
+
+    constexpr float ROOM_MIN_PLAYER_X = ROOM_OFFSET_X + TILE_SIZE + PLAYER_WIDTH * 0.5f;
 
     constexpr float ROOM_MAX_PLAYER_X =
         ROOM_OFFSET_X + ROOM_COLUMNS * TILE_SIZE - TILE_SIZE - PLAYER_WIDTH * 0.5f;
 
-    constexpr float ROOM_MIN_PLAYER_Y =
-        ROOM_OFFSET_Y + TILE_SIZE + PLAYER_HEIGHT * 0.5f;
+    constexpr float ROOM_MIN_PLAYER_Y = ROOM_OFFSET_Y + TILE_SIZE + PLAYER_HEIGHT * 0.5f;
 
     constexpr float ROOM_MAX_PLAYER_Y =
         ROOM_OFFSET_Y + ROOM_ROWS * TILE_SIZE - TILE_SIZE - PLAYER_HEIGHT * 0.5f;
 
-    
-    constexpr float ROOM_MIN_ENEMY_X =
-        ROOM_OFFSET_X + TILE_SIZE + ENEMY_WIDTH * 0.5f;
+    constexpr float ROOM_MIN_ENEMY_X = ROOM_OFFSET_X + TILE_SIZE + ENEMY_WIDTH * 0.5f;
 
     constexpr float ROOM_MAX_ENEMY_X =
         ROOM_OFFSET_X + ROOM_COLUMNS * TILE_SIZE - TILE_SIZE - ENEMY_WIDTH * 0.5f;
 
-    constexpr float ROOM_MIN_ENEMY_Y =
-        ROOM_OFFSET_Y + TILE_SIZE + ENEMY_HEIGHT * 0.5f;
+    constexpr float ROOM_MIN_ENEMY_Y = ROOM_OFFSET_Y + TILE_SIZE + ENEMY_HEIGHT * 0.5f;
 
     constexpr float ROOM_MAX_ENEMY_Y =
         ROOM_OFFSET_Y + ROOM_ROWS * TILE_SIZE - TILE_SIZE - ENEMY_HEIGHT * 0.5f;
-}
+} // namespace XYZRoguelike
