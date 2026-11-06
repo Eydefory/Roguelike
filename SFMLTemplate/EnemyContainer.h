@@ -2,6 +2,7 @@
 
 #include "Enemy.h"
 
+#include <cstddef>
 #include <memory>
 #include <vector>
 
@@ -10,13 +11,13 @@ namespace XYZRoguelike
     class EnemyContainer
     {
     public:
-        explicit EnemyContainer(XYZEngine::GameObject* target);
+        Enemy* AddEnemy(std::unique_ptr<Enemy> enemy);
+        bool RemoveEnemy(Enemy* enemy);
 
-        void CreateEnemies(XYZEngine::GameObject* target);
-
-        Enemy* GetNearestEnemy(XYZEngine::GameObject* target);
+        Enemy* GetNearestEnemy(XYZEngine::GameObject* target) const;
+        std::size_t GetEnemyCount() const;
 
     private:
         std::vector<std::unique_ptr<Enemy>> enemies;
     };
-}
+} // namespace XYZRoguelike

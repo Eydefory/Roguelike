@@ -16,4 +16,4 @@ namespace XYZRoguelike
     private:
         XYZEngine::GameObject* gameObject;
     };
-}
+} // namespace XYZRoguelike

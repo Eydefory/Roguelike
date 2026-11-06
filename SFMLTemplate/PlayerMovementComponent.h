@@ -17,4 +17,4 @@ namespace XYZRoguelike
     private:
         float movementSpeed;
     };
-}
+} // namespace XYZRoguelike

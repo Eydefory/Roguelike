@@ -13,10 +13,7 @@ namespace XYZRoguelike
     {
     public:
         HealthComponent(XYZEngine::GameObject* gameObject)
-            : Component(gameObject),
-            maxHealth(100),
-            health(100),
-            armor(0)
+            : Component(gameObject), maxHealth(100), health(100), armor(0)
         {
             LOG_INFO("HealthComponent initialized");
         }
@@ -83,4 +80,4 @@ namespace XYZRoguelike
         int health;
         int armor;
     };
-}
+} // namespace XYZRoguelike

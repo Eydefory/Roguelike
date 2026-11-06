@@ -21,4 +21,4 @@ namespace XYZRoguelike
         float attackCooldown;
         float attackTimer;
     };
-}
+} // namespace XYZRoguelike

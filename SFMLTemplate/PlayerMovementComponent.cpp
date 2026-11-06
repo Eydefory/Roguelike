@@ -5,20 +5,16 @@
 
 namespace XYZRoguelike
 {
-    PlayerMovementComponent::PlayerMovementComponent(
-        XYZEngine::GameObject* gameObject)
-        : Component(gameObject),
-        movementSpeed(PLAYER_SPEED)
+    PlayerMovementComponent::PlayerMovementComponent(XYZEngine::GameObject* gameObject)
+        : Component(gameObject), movementSpeed(PLAYER_SPEED)
     {
     }
 
     void PlayerMovementComponent::Update(float deltaTime)
     {
-        auto input =
-            GetGameObject()->GetComponent<XYZEngine::InputComponent>();
+        auto input = GetGameObject()->GetComponent<XYZEngine::InputComponent>();
 
-        auto transform =
-            GetGameObject()->GetComponent<XYZEngine::TransformComponent>();
+        auto transform = GetGameObject()->GetComponent<XYZEngine::TransformComponent>();
 
         if (input == nullptr || transform == nullptr)
             return;
@@ -26,11 +22,7 @@ namespace XYZRoguelike
         float horizontal = input->GetHorizontalAxis();
         float vertical = input->GetVerticalAxis();
 
-        
-        float length = std::sqrt(
-            horizontal * horizontal +
-            vertical * vertical
-        );
+        float length = std::sqrt(horizontal * horizontal + vertical * vertical);
 
         if (length > 0.f)
         {
@@ -44,7 +36,5 @@ namespace XYZRoguelike
         transform->MoveBy(moveX, moveY);
     }
 
-    void PlayerMovementComponent::Render()
-    {
-    }
-}
+    void PlayerMovementComponent::Render() {}
+} // namespace XYZRoguelike

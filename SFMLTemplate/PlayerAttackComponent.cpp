@@ -1,6 +1,6 @@
 #include "PlayerAttackComponent.h"
-#include "EnemyContainer.h"
 #include "Enemy.h"
+#include "EnemyContainer.h"
 #include "HealthComponent.h"
 #include "Loger.h"
 
@@ -8,17 +8,12 @@
 
 namespace XYZRoguelike
 {
-    PlayerAttackComponent::PlayerAttackComponent(
-        XYZEngine::GameObject* gameObject)
-        : Component(gameObject),
-        enemyContainer(nullptr),
-        attackCooldown(0.5f),
-        attackTimer(0.f)
+    PlayerAttackComponent::PlayerAttackComponent(XYZEngine::GameObject* gameObject)
+        : Component(gameObject), enemyContainer(nullptr), attackCooldown(0.5f), attackTimer(0.f)
     {
     }
 
-    void PlayerAttackComponent::SetEnemyContainer(
-        EnemyContainer* container)
+    void PlayerAttackComponent::SetEnemyContainer(EnemyContainer* container)
     {
         enemyContainer = container;
     }
@@ -36,14 +31,12 @@ namespace XYZRoguelike
         if (enemyContainer == nullptr)
             return;
 
-        Enemy* enemy =
-            enemyContainer->GetNearestEnemy(gameObject);
+        Enemy* enemy = enemyContainer->GetNearestEnemy(gameObject);
 
         if (enemy == nullptr)
             return;
 
-        HealthComponent* health =
-            enemy->GetHealthComponent();
+        HealthComponent* health = enemy->GetHealthComponent();
 
         if (health == nullptr || !health->IsAlive())
             return;
@@ -53,9 +46,12 @@ namespace XYZRoguelike
         health->TakeDamage(20);
 
         LOG_INFO("Player attacked enemy");
+
+        if (!health->IsAlive())
+        {
+            enemyContainer->RemoveEnemy(enemy);
+        }
     }
 
-    void PlayerAttackComponent::Render()
-    {
-    }
-}
+    void PlayerAttackComponent::Render() {}
+} // namespace XYZRoguelike

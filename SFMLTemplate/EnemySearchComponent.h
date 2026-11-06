@@ -14,6 +14,7 @@ namespace XYZRoguelike
         void Render() override;
 
         void SetTarget(XYZEngine::GameObject* target);
+        void SetMovementSettings(float detectionRadius, float movementSpeed, float stopDistance);
 
         bool IsTargetDetected() const;
 
@@ -28,4 +29,4 @@ namespace XYZRoguelike
 
         bool targetDetected;
     };
-}
+} // namespace XYZRoguelike

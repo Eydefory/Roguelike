@@ -41,4 +41,4 @@ namespace XYZRoguelike
         if (sound != sounds.end())
             sound->second->play();
     }
-}
+} // namespace XYZRoguelike
