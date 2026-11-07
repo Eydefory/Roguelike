@@ -10,8 +10,8 @@
 #include "Loger.h"
 #include "PlayerAnimationComponent.h"
 #include "ProjectileComponent.h"
-#include "RigidbodyComponent.h"
 #include "ResourceSystem.h"
+#include "RigidbodyComponent.h"
 #include "SpriteColliderComponent.h"
 #include "SpriteRendererComponent.h"
 #include "TransformComponent.h"
@@ -47,10 +47,10 @@ namespace XYZRoguelike
             auto* playerTransform = gameObject->GetComponent<XYZEngine::TransformComponent>();
             auto* animation = gameObject->GetComponent<PlayerAnimationComponent>();
             Enemy* nearestEnemy = enemyContainer->GetNearestEnemy(gameObject);
-            auto* enemyTransform = nearestEnemy != nullptr
-                                       ? nearestEnemy->GetGameObject()->GetComponent<
-                                             XYZEngine::TransformComponent>()
-                                       : nullptr;
+            auto* enemyTransform =
+                nearestEnemy != nullptr
+                    ? nearestEnemy->GetGameObject()->GetComponent<XYZEngine::TransformComponent>()
+                    : nullptr;
             if (playerTransform != nullptr && enemyTransform != nullptr && animation != nullptr)
             {
                 const auto playerPosition = playerTransform->GetWorldPosition();
@@ -160,8 +160,8 @@ namespace XYZRoguelike
         if (!health->IsAlive())
         {
             auto* inventory = gameObject->GetComponent<InventoryComponent>();
-            const ItemType potion = inventory != nullptr ? inventory->AddRandomPotionDrop()
-                                                          : ItemType::Empty;
+            const ItemType potion =
+                inventory != nullptr ? inventory->AddRandomPotionDrop() : ItemType::Empty;
             if (hud != nullptr)
             {
                 if (potion != ItemType::Empty)

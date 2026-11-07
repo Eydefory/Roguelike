@@ -22,8 +22,8 @@ namespace XYZRoguelike
         constexpr float INVENTORY_SLOT_SIZE = 92.f;
         constexpr float INVENTORY_SLOT_STEP_X = 123.f;
         constexpr float INVENTORY_GRID_START_X =
-            (1024.f - (6.f * INVENTORY_SLOT_SIZE + 5.f *
-                       (INVENTORY_SLOT_STEP_X - INVENTORY_SLOT_SIZE))) *
+            (1024.f -
+             (6.f * INVENTORY_SLOT_SIZE + 5.f * (INVENTORY_SLOT_STEP_X - INVENTORY_SLOT_SIZE))) *
             0.5f;
         constexpr float INVENTORY_GRID_START_Y = 376.f;
         constexpr float POPUP_LIFETIME = 3.2f;
@@ -64,9 +64,9 @@ namespace XYZRoguelike
             while (wordStart < value.size())
             {
                 const std::size_t wordEnd = value.find(' ', wordStart);
-                const std::string word = value.substr(
-                    wordStart, wordEnd == std::string::npos ? std::string::npos
-                                                            : wordEnd - wordStart);
+                const std::string word =
+                    value.substr(wordStart, wordEnd == std::string::npos ? std::string::npos
+                                                                         : wordEnd - wordStart);
                 const std::string candidate = line.empty() ? word : line + " " + word;
                 sf::Text measure(candidate, font, characterSize);
                 if (!line.empty() && measure.getLocalBounds().width > maxWidth)
@@ -109,8 +109,8 @@ namespace XYZRoguelike
             playerPortrait.setTexture(*texture);
             const float portraitSize = 168.f * panelLayoutScale;
             const auto textureSize = texture->getSize();
-            const float scale = portraitSize / static_cast<float>(std::max(textureSize.x,
-                                                                           textureSize.y));
+            const float scale =
+                portraitSize / static_cast<float>(std::max(textureSize.x, textureSize.y));
             playerPortrait.setScale(scale, scale);
             playerPortrait.setPosition(inventoryBackground.getPosition() +
                                        sf::Vector2f(217.f, 202.f) * panelLayoutScale -
@@ -134,7 +134,8 @@ namespace XYZRoguelike
             inventorySlots[index].setPosition(
                 inventoryBackground.getPosition() +
                 sf::Vector2f(INVENTORY_GRID_START_X + column * INVENTORY_SLOT_STEP_X,
-                             INVENTORY_GRID_START_Y + row * 120.f) * panelLayoutScale);
+                             INVENTORY_GRID_START_Y + row * 120.f) *
+                    panelLayoutScale);
         }
 
         if (const auto* texture = resources->GetTextureShared("slot_empty"))
@@ -180,15 +181,14 @@ namespace XYZRoguelike
         closeKeyWasPressed = closeKeyPressed;
 
         static constexpr std::array<sf::Keyboard::Key, INVENTORY_SLOT_COUNT> numberKeys = {
-            sf::Keyboard::Num1,  sf::Keyboard::Num2,    sf::Keyboard::Num3,
-            sf::Keyboard::Num4,  sf::Keyboard::Num5,    sf::Keyboard::Num6,
-            sf::Keyboard::Num7,  sf::Keyboard::Num8,    sf::Keyboard::Num9,
-            sf::Keyboard::Num0,  sf::Keyboard::Hyphen,  sf::Keyboard::Equal};
+            sf::Keyboard::Num1, sf::Keyboard::Num2, sf::Keyboard::Num3,   sf::Keyboard::Num4,
+            sf::Keyboard::Num5, sf::Keyboard::Num6, sf::Keyboard::Num7,   sf::Keyboard::Num8,
+            sf::Keyboard::Num9, sf::Keyboard::Num0, sf::Keyboard::Hyphen, sf::Keyboard::Equal};
         static constexpr std::array<sf::Keyboard::Key, INVENTORY_SLOT_COUNT> numpadKeys = {
-            sf::Keyboard::Numpad1, sf::Keyboard::Numpad2,    sf::Keyboard::Numpad3,
-            sf::Keyboard::Numpad4, sf::Keyboard::Numpad5,    sf::Keyboard::Numpad6,
-            sf::Keyboard::Numpad7, sf::Keyboard::Numpad8,    sf::Keyboard::Numpad9,
-            sf::Keyboard::Numpad0, sf::Keyboard::Subtract,   sf::Keyboard::Add};
+            sf::Keyboard::Numpad1, sf::Keyboard::Numpad2,  sf::Keyboard::Numpad3,
+            sf::Keyboard::Numpad4, sf::Keyboard::Numpad5,  sf::Keyboard::Numpad6,
+            sf::Keyboard::Numpad7, sf::Keyboard::Numpad8,  sf::Keyboard::Numpad9,
+            sf::Keyboard::Numpad0, sf::Keyboard::Subtract, sf::Keyboard::Add};
         for (std::size_t index = 0; index < INVENTORY_SLOT_COUNT; ++index)
         {
             const bool pressed = sf::Keyboard::isKeyPressed(numberKeys[index]) ||
@@ -321,36 +321,34 @@ namespace XYZRoguelike
 
                 sf::Text portraitCaption("HERO", font, 18);
                 portraitCaption.setFillColor(sf::Color(208, 224, 174));
-                SetTextCentered(portraitCaption,
-                                panelPosition.x + 217.f * panelLayoutScale,
+                SetTextCentered(portraitCaption, panelPosition.x + 217.f * panelLayoutScale,
                                 panelPosition.y + 297.f * panelLayoutScale);
                 window.draw(portraitCaption, panelRenderStates);
 
-                const ItemType selectedItem = inventory != nullptr
-                                                  ? inventory->GetSelectedItem()
-                                                  : ItemType::Empty;
+                const ItemType selectedItem =
+                    inventory != nullptr ? inventory->GetSelectedItem() : ItemType::Empty;
                 sf::Text handLabel("IN HAND", font, 17);
                 handLabel.setFillColor(sf::Color(208, 224, 174));
-                SetTextTopLeft(handLabel, panelPosition +
-                                              sf::Vector2f(365.f, 192.f) * panelLayoutScale);
+                SetTextTopLeft(handLabel,
+                               panelPosition + sf::Vector2f(365.f, 192.f) * panelLayoutScale);
                 window.draw(handLabel, panelRenderStates);
 
                 sf::Text handItem(GetItemDisplayName(selectedItem), font, 25);
                 handItem.setFillColor(sf::Color(245, 241, 255));
-                SetTextTopLeft(handItem, panelPosition +
-                                            sf::Vector2f(365.f, 220.f) * panelLayoutScale);
+                SetTextTopLeft(handItem,
+                               panelPosition + sf::Vector2f(365.f, 220.f) * panelLayoutScale);
                 window.draw(handItem, panelRenderStates);
 
                 sf::Text controls("1-9, 0, - or = select   F use item   I close", font, 25.5);
                 controls.setFillColor(sf::Color(183, 180, 203));
-                SetTextTopLeft(controls, panelPosition +
-                                            sf::Vector2f(365.f, 255.f) * panelLayoutScale);
+                SetTextTopLeft(controls,
+                               panelPosition + sf::Vector2f(365.f, 255.f) * panelLayoutScale);
                 window.draw(controls, panelRenderStates);
 
                 sf::Text combatControls("SPACE attack   E unlock door", font, 20);
                 combatControls.setFillColor(sf::Color(183, 180, 203));
-                SetTextTopLeft(combatControls, panelPosition +
-                                                  sf::Vector2f(365.f, 289.f) * panelLayoutScale);
+                SetTextTopLeft(combatControls,
+                               panelPosition + sf::Vector2f(365.f, 289.f) * panelLayoutScale);
                 window.draw(combatControls, panelRenderStates);
 
                 for (std::size_t index = 0; index < INVENTORY_SLOT_COUNT; ++index)
@@ -364,8 +362,7 @@ namespace XYZRoguelike
         {
             const auto& popup = popups[index];
             const float fadeIn = std::clamp(popup.age / 0.32f, 0.f, 1.f);
-            const float fadeOut =
-                std::clamp((popup.lifetime - popup.age) / 0.42f, 0.f, 1.f);
+            const float fadeOut = std::clamp((popup.lifetime - popup.age) / 0.42f, 0.f, 1.f);
             const float smoothFadeIn = fadeIn * fadeIn * (3.f - 2.f * fadeIn);
             const float opacity = std::min(smoothFadeIn, fadeOut);
             const float targetY = 225.f + index * 136.f;
@@ -375,8 +372,8 @@ namespace XYZRoguelike
             if (popupBackground.getTexture() != nullptr)
             {
                 popupBackground.setPosition(position);
-                popupBackground.setColor(sf::Color(255, 255, 255,
-                                                   static_cast<sf::Uint8>(255.f * opacity)));
+                popupBackground.setColor(
+                    sf::Color(255, 255, 255, static_cast<sf::Uint8>(255.f * opacity)));
                 window.draw(popupBackground);
             }
 
@@ -577,11 +574,10 @@ namespace XYZRoguelike
                 sf::Text quantity("x" + std::to_string(item.quantity), font, showLabel ? 11 : 10);
                 quantity.setFillColor(sf::Color(246, 239, 255));
                 const auto bounds = quantity.getLocalBounds();
-                SetTextTopLeft(quantity,
-                               sf::Vector2f(slot.getPosition().x + slot.getSize().x -
-                                                bounds.width - 6.f,
-                                            slot.getPosition().y + slot.getSize().y -
-                                                bounds.height - 5.f));
+                SetTextTopLeft(
+                    quantity,
+                    sf::Vector2f(slot.getPosition().x + slot.getSize().x - bounds.width - 6.f,
+                                 slot.getPosition().y + slot.getSize().y - bounds.height - 5.f));
                 window.draw(quantity, renderStates);
             }
         }
@@ -592,7 +588,6 @@ namespace XYZRoguelike
             number.setFillColor(sf::Color(212, 204, 232));
             SetTextTopLeft(number, slot.getPosition() + sf::Vector2f(7.f, 3.f));
             window.draw(number, renderStates);
-
         }
     }
 } // namespace XYZRoguelike

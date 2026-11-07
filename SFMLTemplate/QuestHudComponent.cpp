@@ -67,8 +67,8 @@ namespace XYZRoguelike
         title.setCharacterSize(16);
         title.setFillColor(sf::Color(244, 239, 255));
 
-        const std::array<const char*, 3> labels = {
-            "DEFEAT ENEMIES", "FIND THE KEY", "OPEN THE EXIT"};
+        const std::array<const char*, 3> labels = {"DEFEAT ENEMIES", "FIND THE KEY",
+                                                   "OPEN THE EXIT"};
         for (std::size_t index = 0; index < objectives.size(); ++index)
         {
             objectives[index].setFont(font);
@@ -142,11 +142,9 @@ namespace XYZRoguelike
         statuses[0].setFillColor(remaining == 0 ? sf::Color(173, 234, 172)
                                                 : sf::Color(232, 221, 177));
         statuses[1].setString(hasKey ? "DONE" : (remaining == 0 ? "READY" : "WAIT"));
-        statuses[1].setFillColor(hasKey ? sf::Color(173, 234, 172)
-                                        : sf::Color(232, 221, 177));
+        statuses[1].setFillColor(hasKey ? sf::Color(173, 234, 172) : sf::Color(232, 221, 177));
         statuses[2].setString(hasKey ? "READY" : "LOCKED");
-        statuses[2].setFillColor(hasKey ? sf::Color(173, 234, 172)
-                                        : sf::Color(177, 174, 192));
+        statuses[2].setFillColor(hasKey ? sf::Color(173, 234, 172) : sf::Color(177, 174, 192));
 
         for (std::size_t index = 0; index < objectives.size(); ++index)
         {

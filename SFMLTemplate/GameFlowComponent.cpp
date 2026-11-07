@@ -29,12 +29,11 @@ namespace XYZRoguelike
         constexpr float VOLUME_TRACK_WIDTH = 300.f;
     } // namespace
 
-    GameFlowComponent::GameFlowComponent(XYZEngine::GameObject* gameObject,
-                                         DeveloperLevel* level)
+    GameFlowComponent::GameFlowComponent(XYZEngine::GameObject* gameObject, DeveloperLevel* level)
         : Component(gameObject), level(level)
     {
-        backdrop.setSize(sf::Vector2f(static_cast<float>(SCREEN_WIDTH),
-                                      static_cast<float>(SCREEN_HEIGHT)));
+        backdrop.setSize(
+            sf::Vector2f(static_cast<float>(SCREEN_WIDTH), static_cast<float>(SCREEN_HEIGHT)));
         backdrop.setFillColor(sf::Color(5, 7, 14, 250));
 
         if (const auto* texture =
@@ -62,7 +61,7 @@ namespace XYZRoguelike
         {
             victoryBackground.setTexture(*texture);
             victoryBackground.setScale(static_cast<float>(SCREEN_WIDTH) / texture->getSize().x,
-                                        static_cast<float>(SCREEN_HEIGHT) / texture->getSize().y);
+                                       static_cast<float>(SCREEN_HEIGHT) / texture->getSize().y);
             victoryBackgroundLoaded = true;
         }
         if (const auto* texture =
@@ -149,8 +148,8 @@ namespace XYZRoguelike
         volumeKnob.setFillColor(sf::Color(214, 234, 255));
         volumeKnob.setOutlineColor(sf::Color(115, 190, 239));
         volumeKnob.setOutlineThickness(2.f);
-        UpdateVolumeSlider(VOLUME_TRACK_X + VOLUME_TRACK_WIDTH *
-                                                AudioManager::Instance().GetVolume() / 100.f);
+        UpdateVolumeSlider(VOLUME_TRACK_X +
+                           VOLUME_TRACK_WIDTH * AudioManager::Instance().GetVolume() / 100.f);
 
         for (std::size_t index = 0; index < buttons.size(); ++index)
         {
@@ -189,10 +188,10 @@ namespace XYZRoguelike
                 level->GetPlayer()->GetGameObject()->GetComponent<InventoryHudComponent>();
             inventoryOpen = inventoryHud != nullptr && inventoryHud->IsOpen();
         }
-        const bool pausePressed = sf::Keyboard::isKeyPressed(sf::Keyboard::P) ||
-                                  (escapePressed &&
-                                   (screen == ScreenState::Pause ||
-                                    (screen == ScreenState::Playing && !inventoryOpen)));
+        const bool pausePressed =
+            sf::Keyboard::isKeyPressed(sf::Keyboard::P) ||
+            (escapePressed &&
+             (screen == ScreenState::Pause || (screen == ScreenState::Playing && !inventoryOpen)));
 
         if (screen == ScreenState::Playing)
         {
@@ -271,14 +270,13 @@ namespace XYZRoguelike
                 if (buttonContainerLoaded)
                 {
                     button.container.setTexture(index == focusedButton ? *hoverButtonTexture
-                                                                         : *normalButtonTexture);
+                                                                       : *normalButtonTexture);
                     window.draw(button.container);
                 }
                 else
                 {
-                    button.shape.setFillColor(index == focusedButton
-                                                  ? sf::Color(79, 67, 126)
-                                                  : sf::Color(35, 37, 57));
+                    button.shape.setFillColor(index == focusedButton ? sf::Color(79, 67, 126)
+                                                                     : sf::Color(35, 37, 57));
                     window.draw(button.shape);
                 }
                 if (fontLoaded)
@@ -342,8 +340,7 @@ namespace XYZRoguelike
             }
             else
             {
-                button.shape.setFillColor(focused ? sf::Color(79, 67, 126)
-                                                  : sf::Color(35, 37, 57));
+                button.shape.setFillColor(focused ? sf::Color(79, 67, 126) : sf::Color(35, 37, 57));
                 window.draw(button.shape);
             }
             if (fontLoaded)
@@ -365,8 +362,8 @@ namespace XYZRoguelike
         for (std::size_t index = 0; index < buttons.size(); ++index)
         {
             auto& button = buttons[index];
-            button.shape.setPosition(440.f, (pauseScreen ? 300.f : 365.f) +
-                                                index * MENU_BUTTON_GAP);
+            button.shape.setPosition(440.f,
+                                     (pauseScreen ? 300.f : 365.f) + index * MENU_BUTTON_GAP);
             if (buttonContainerLoaded)
             {
                 const float scale = MENU_BUTTON_WIDTH / 1926.f;
@@ -383,7 +380,7 @@ namespace XYZRoguelike
         switch (screen)
         {
         case ScreenState::MainMenu:
-            title.setString("XYZ ROGUELIKE");
+            title.setString("ROGUELIKE");
             subtitle.setString("Three maze levels. Find the key and reach the exit.");
             buttons[0].label.setString("START RUN");
             buttons[1].label.setString("EXIT GAME");

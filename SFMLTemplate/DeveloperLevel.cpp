@@ -116,7 +116,7 @@ namespace XYZRoguelike
 
         LoadMenuResources();
         auto* resources = XYZEngine::ResourceSystem::Instance();
-        const std::array<std::pair<const char*, const char*>, 49> textures = {{
+        const std::array<std::pair<const char*, const char*>, 51> textures = {{
             {"player", "Resources/Textures/player_walk_frame_04.png"},
             {"player_walk_1", "Resources/Textures/player_walk_frame_01.png"},
             {"player_walk_2", "Resources/Textures/player_walk_frame_02.png"},
@@ -136,6 +136,8 @@ namespace XYZRoguelike
             {"player_right_idle", "Resources/Textures/player_right_idle_04.png"},
             {"health_bar_frame", "Resources/Textures/health_bar_frame.png"},
             {"health_fill_red", "Resources/Textures/health_fill_red.png"},
+            {"sprint_bar_frame", "Resources/Textures/sprint_bar_frame.png"},
+            {"sprint_fill_green", "Resources/Textures/sprint_fill_green.png"},
             {"shield_icon", "Resources/Textures/shield.png"},
             {"title_background", "Resources/Textures/title_background.png"},
             {"victory_background", "Resources/Textures/victory_background.png"},
@@ -185,15 +187,20 @@ namespace XYZRoguelike
 
         auto* resources = XYZEngine::ResourceSystem::Instance();
         resources->LoadTexture("inventory_panel", "Resources/Textures/inventory_panel.png", false);
-        resources->LoadTexture("title_background", "Resources/Textures/title_background.png", false);
-        resources->LoadTexture("victory_background", "Resources/Textures/victory_background.png", false);
-        resources->LoadTexture("defeat_background", "Resources/Textures/defeat_background.png", false);
-        resources->LoadTexture("button_container_hover", "Resources/Textures/button_container_hover.png", false);
-        resources->LoadTexture("button_container", "Resources/Textures/button_container.png", false);
-        resources->LoadTexture("end_screen_container", "Resources/Textures/end_screen_container.png", false);
+        resources->LoadTexture("title_background", "Resources/Textures/title_background.png",
+                               false);
+        resources->LoadTexture("victory_background", "Resources/Textures/victory_background.png",
+                               false);
+        resources->LoadTexture("defeat_background", "Resources/Textures/defeat_background.png",
+                               false);
+        resources->LoadTexture("button_container_hover",
+                               "Resources/Textures/button_container_hover.png", false);
+        resources->LoadTexture("button_container", "Resources/Textures/button_container.png",
+                               false);
+        resources->LoadTexture("end_screen_container",
+                               "Resources/Textures/end_screen_container.png", false);
         resources->LoadTexture("pause_menu", "Resources/Textures/pause_menu.png", false);
-        menuResourcesLoaded =
-            resources->GetTextureShared("inventory_panel") != nullptr;
+        menuResourcesLoaded = resources->GetTextureShared("inventory_panel") != nullptr;
     }
 
     void DeveloperLevel::BuildLevel(bool preservePlayer, XYZEngine::GameObject* preservedRoot)
@@ -349,10 +356,6 @@ namespace XYZRoguelike
                                                     [this]() { AdvanceLevel(); });
 
         if (auto* hud = player->GetGameObject()->GetComponent<InventoryHudComponent>())
-        {
-            hud->SetLevelNumber(levelManager.GetCurrentLevel());
-        }
-        if (auto* hud = player->GetGameObject()->GetComponent<HealthBarComponent>())
         {
             hud->SetLevelNumber(levelManager.GetCurrentLevel());
         }

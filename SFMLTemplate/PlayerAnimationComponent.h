@@ -32,7 +32,13 @@ namespace XYZRoguelike
         sf::Vector2f GetFacingDirection() const;
 
     private:
-        enum class Facing { Front, Back, Left, Right };
+        enum class Facing
+        {
+            Front,
+            Back,
+            Left,
+            Right
+        };
         void ApplyFrame(std::size_t frameIndex);
 
         std::array<std::array<const sf::Texture*, 4>, 4> frames{};

@@ -58,13 +58,9 @@ namespace XYZRoguelike
             const int rows = static_cast<int>(navigationGrid.size());
             const int columns = static_cast<int>(navigationGrid.front().size());
             const auto toCellX = [](float worldX)
-            {
-                return static_cast<int>(std::floor((worldX - ROOM_OFFSET_X) / TILE_SIZE));
-            };
+            { return static_cast<int>(std::floor((worldX - ROOM_OFFSET_X) / TILE_SIZE)); };
             const auto toCellY = [](float worldY)
-            {
-                return static_cast<int>(std::floor((worldY - ROOM_OFFSET_Y) / TILE_SIZE));
-            };
+            { return static_cast<int>(std::floor((worldY - ROOM_OFFSET_Y) / TILE_SIZE)); };
             const int startX = std::clamp(toCellX(enemyPosition.x), 0, columns - 1);
             const int startY = std::clamp(toCellY(enemyPosition.y), 0, rows - 1);
             const int goalX = std::clamp(toCellX(targetPosition.x), 0, columns - 1);
@@ -87,8 +83,7 @@ namespace XYZRoguelike
             parent[static_cast<std::size_t>(start)] = start;
             open.push(start);
             const std::array<sf::Vector2i, 4> DIRECTIONS = {
-                sf::Vector2i(1, 0), sf::Vector2i(-1, 0), sf::Vector2i(0, 1),
-                sf::Vector2i(0, -1)};
+                sf::Vector2i(1, 0), sf::Vector2i(-1, 0), sf::Vector2i(0, 1), sf::Vector2i(0, -1)};
 
             while (!open.empty() && parent[static_cast<std::size_t>(goal)] == -1)
             {

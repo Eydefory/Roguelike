@@ -19,9 +19,9 @@ namespace XYZRoguelike
         auto renderer = gameObject->AddComponent<XYZEngine::SpriteRendererComponent>();
 
         static std::mt19937 randomEngine(std::random_device{}());
-        static const std::array<const char*, 5> textureNames = {
-            "wall_variant_1", "wall_variant_2", "wall_variant_3", "wall_variant_4",
-            "wall_variant_5"};
+        static const std::array<const char*, 5> textureNames = {"wall_variant_1", "wall_variant_2",
+                                                                "wall_variant_3", "wall_variant_4",
+                                                                "wall_variant_5"};
         std::uniform_int_distribution<std::size_t> chooseTexture(0, textureNames.size() - 1);
         auto* resources = XYZEngine::ResourceSystem::Instance();
         const auto selectedIndex = chooseTexture(randomEngine);

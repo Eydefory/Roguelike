@@ -58,9 +58,9 @@ namespace XYZRoguelike
         const float actualStep = std::sqrt(movedX * movedX + movedY * movedY);
         distanceTravelled += actualStep;
 
-        Enemy* enemy = enemies->GetEnemyHitBySegment(previousPosition.x, previousPosition.y,
-                                                     currentPosition.x, currentPosition.y,
-                                                     24.f, 24.f);
+        Enemy* enemy =
+            enemies->GetEnemyHitBySegment(previousPosition.x, previousPosition.y, currentPosition.x,
+                                          currentPosition.y, 24.f, 24.f);
         if (enemy != nullptr)
         {
             auto* health = enemy->GetHealthComponent();
@@ -77,26 +77,23 @@ namespace XYZRoguelike
                     camera->Shake(0.18f, 8.f);
                 }
 
-                auto* hud = player != nullptr
-                                ? player->GetComponent<InventoryHudComponent>()
-                                : nullptr;
+                auto* hud =
+                    player != nullptr ? player->GetComponent<InventoryHudComponent>() : nullptr;
                 if (hud != nullptr)
                 {
                     hud->ShowFeedback("Arrow hit! " +
-                                      std::to_string(previousHealth - health->GetHealth() +
-                                                     previousArmor - health->GetArmor()) +
-                                      " damage.",
+                                          std::to_string(previousHealth - health->GetHealth() +
+                                                         previousArmor - health->GetArmor()) +
+                                          " damage.",
                                       sf::Color(255, 190, 160));
                 }
 
                 if (!health->IsAlive())
                 {
-                    auto* inventory = player != nullptr
-                                          ? player->GetComponent<InventoryComponent>()
-                                          : nullptr;
-                    const ItemType potion = inventory != nullptr
-                                                ? inventory->AddRandomPotionDrop()
-                                                : ItemType::Empty;
+                    auto* inventory =
+                        player != nullptr ? player->GetComponent<InventoryComponent>() : nullptr;
+                    const ItemType potion =
+                        inventory != nullptr ? inventory->AddRandomPotionDrop() : ItemType::Empty;
                     if (hud != nullptr)
                     {
                         if (potion != ItemType::Empty)
@@ -120,8 +117,8 @@ namespace XYZRoguelike
 
         const float expectedX = directionX * step;
         const float expectedY = directionY * step;
-        const bool blocked = std::abs(movedX - expectedX) > 0.5f ||
-                             std::abs(movedY - expectedY) > 0.5f;
+        const bool blocked =
+            std::abs(movedX - expectedX) > 0.5f || std::abs(movedY - expectedY) > 0.5f;
         if (blocked || distanceTravelled >= PLAYER_BOW_RANGE)
         {
             XYZEngine::GameWorld::Instance()->DestroyGameObject(gameObject);
