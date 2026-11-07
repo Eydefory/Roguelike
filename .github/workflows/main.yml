@@ -3,26 +3,22 @@ name: Build Game Solution
 on:
   push:
     branches:
-      - main 
+      - main
   pull_request:
     branches:
-      - main 
+      - main
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: windows-latest
 
     steps:
-      # Step 1: Checkout the repository
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v5
 
-       # Step 2: Set up MSBuild and Visual Studio
-      - name: Setup MSBuild
-        uses: microsoft/setup-msbuild@v1
+      - name: Set up MSBuild
+        uses: microsoft/setup-msbuild@v3
 
-      # Step 3: Build the solution
-      - name: Build solution
-        run: |
-          msbuild Game.sln /p:Configuration=Release /p:Platform=x64
-          
+      - name: Build game
+        run: msbuild Game.sln /t:SFMLTemplate /p:Configuration=Release /p:Platform=x64
