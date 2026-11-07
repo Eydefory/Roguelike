@@ -40,7 +40,5 @@ namespace XYZEngine
         bounds = sprite->getGlobalBounds();
     }
 
-    void SpriteColliderComponent::Render()
-    {
-    }
+    void SpriteColliderComponent::Render() {}
 } // namespace XYZEngine
