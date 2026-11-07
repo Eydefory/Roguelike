@@ -19,4 +19,4 @@ namespace XYZEngine
         Engine();
         ~Engine() = default;
     };
-}
+} // namespace XYZEngine

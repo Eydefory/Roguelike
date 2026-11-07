@@ -4,9 +4,7 @@
 
 namespace XYZEngine
 {
-    Component::Component(GameObject* gameObject) : gameObject(gameObject)
-    {
-    }
+    Component::Component(GameObject* gameObject) : gameObject(gameObject) {}
 
     Component::~Component()
     {
@@ -17,4 +15,4 @@ namespace XYZEngine
     {
         return gameObject;
     }
-}
+} // namespace XYZEngine

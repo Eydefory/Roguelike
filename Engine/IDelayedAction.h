@@ -40,4 +40,4 @@ namespace XYZEngine
             isTimerStarted_ = true;
         }
     };
-}
+} // namespace XYZEngine

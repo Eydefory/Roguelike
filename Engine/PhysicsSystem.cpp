@@ -16,9 +16,155 @@ namespace XYZEngine
         return fixedDeltaTime;
     }
 
+    void PhysicsSystem::MoveCollider(ColliderComponent* movingCollider, float offsetX,
+                                     float offsetY)
+    {
+        if (movingCollider == nullptr)
+        {
+            return;
+        }
+
+        GameObject* movingObject = movingCollider->GetGameObject();
+        if (movingObject == nullptr)
+        {
+            return;
+        }
+
+        TransformComponent* transform = movingObject->GetComponent<TransformComponent>();
+        if (transform == nullptr)
+        {
+            return;
+        }
+
+        for (ColliderComponent* collider : colliders)
+        {
+            if (collider != nullptr)
+            {
+                collider->Update(0.f);
+            }
+        }
+
+        auto moveAxis =
+            [this, movingCollider, movingObject, transform](float offset, bool horizontal)
+        {
+            if (offset == 0.f)
+            {
+                return;
+            }
+
+            movingCollider->Update(0.f);
+            const sf::FloatRect bounds = movingCollider->bounds;
+            float allowedOffset = offset;
+
+            for (ColliderComponent* obstacle : colliders)
+            {
+                if (obstacle == nullptr || obstacle == movingCollider || obstacle->isTrigger ||
+                    obstacle->GetGameObject() == movingObject)
+                {
+                    continue;
+                }
+
+                obstacle->Update(0.f);
+                const sf::FloatRect obstacleBounds = obstacle->bounds;
+
+                if (horizontal)
+                {
+                    const bool overlapsY =
+                        bounds.top < obstacleBounds.top + obstacleBounds.height &&
+                        bounds.top + bounds.height > obstacleBounds.top;
+                    if (!overlapsY)
+                    {
+                        continue;
+                    }
+
+                    if (offset > 0.f)
+                    {
+                        const float gap = obstacleBounds.left - (bounds.left + bounds.width);
+                        if (gap >= 0.f && gap < allowedOffset)
+                        {
+                            allowedOffset = gap;
+                        }
+                        else if (bounds.intersects(obstacleBounds) &&
+                                 bounds.left < obstacleBounds.left)
+                        {
+                            allowedOffset = 0.f;
+                        }
+                    }
+                    else
+                    {
+                        const float gap = obstacleBounds.left + obstacleBounds.width - bounds.left;
+                        if (gap <= 0.f && gap > allowedOffset)
+                        {
+                            allowedOffset = gap;
+                        }
+                        else if (bounds.intersects(obstacleBounds) &&
+                                 bounds.left > obstacleBounds.left)
+                        {
+                            allowedOffset = 0.f;
+                        }
+                    }
+                }
+                else
+                {
+                    const bool overlapsX =
+                        bounds.left < obstacleBounds.left + obstacleBounds.width &&
+                        bounds.left + bounds.width > obstacleBounds.left;
+                    if (!overlapsX)
+                    {
+                        continue;
+                    }
+
+                    if (offset > 0.f)
+                    {
+                        const float gap = obstacleBounds.top - (bounds.top + bounds.height);
+                        if (gap >= 0.f && gap < allowedOffset)
+                        {
+                            allowedOffset = gap;
+                        }
+                        else if (bounds.intersects(obstacleBounds) &&
+                                 bounds.top < obstacleBounds.top)
+                        {
+                            allowedOffset = 0.f;
+                        }
+                    }
+                    else
+                    {
+                        const float gap = obstacleBounds.top + obstacleBounds.height - bounds.top;
+                        if (gap <= 0.f && gap > allowedOffset)
+                        {
+                            allowedOffset = gap;
+                        }
+                        else if (bounds.intersects(obstacleBounds) &&
+                                 bounds.top > obstacleBounds.top)
+                        {
+                            allowedOffset = 0.f;
+                        }
+                    }
+                }
+            }
+
+            if (allowedOffset != 0.f)
+            {
+                if (horizontal)
+                {
+                    transform->MoveBy(allowedOffset, 0.f);
+                }
+                else
+                {
+                    transform->MoveBy(0.f, allowedOffset);
+                }
+
+                movingCollider->Update(0.f);
+            }
+        };
+
+        moveAxis(offsetX, true);
+        moveAxis(offsetY, false);
+    }
+
     void PhysicsSystem::Update()
     {
-        
+
         for (auto collider : colliders)
         {
             if (collider != nullptr)
@@ -47,28 +193,20 @@ namespace XYZEngine
 
                 sf::FloatRect intersection;
 
-                if (!colliderA->bounds.intersects(
-                    colliderB->bounds,
-                    intersection))
+                if (!colliderA->bounds.intersects(colliderB->bounds, intersection))
                 {
                     continue;
                 }
 
-                
                 if (colliderA->isTrigger != colliderB->isTrigger)
                 {
                     auto triggerPair = std::find_if(
-                        triggersEnteredPair.begin(),
-                        triggersEnteredPair.end(),
+                        triggersEnteredPair.begin(), triggersEnteredPair.end(),
                         [colliderA, colliderB](const auto& pair)
                         {
-                            return
-                                (pair.first == colliderA &&
-                                    pair.second == colliderB) ||
-                                (pair.first == colliderB &&
-                                    pair.second == colliderA);
-                        }
-                    );
+                            return (pair.first == colliderA && pair.second == colliderB) ||
+                                   (pair.first == colliderB && pair.second == colliderA);
+                        });
 
                     if (triggerPair == triggersEnteredPair.end())
                     {
@@ -96,17 +234,13 @@ namespace XYZEngine
                     continue;
                 }
 
-                auto bodyA =
-                    objectA->GetComponent<RigidbodyComponent>();
+                auto bodyA = objectA->GetComponent<RigidbodyComponent>();
 
-                auto bodyB =
-                    objectB->GetComponent<RigidbodyComponent>();
+                auto bodyB = objectB->GetComponent<RigidbodyComponent>();
 
-                bool canMoveA =
-                    bodyA != nullptr && !bodyA->GetKinematic();
+                bool canMoveA = bodyA != nullptr && !bodyA->GetKinematic();
 
-                bool canMoveB =
-                    bodyB != nullptr && !bodyB->GetKinematic();
+                bool canMoveB = bodyB != nullptr && !bodyB->GetKinematic();
 
                 if (!canMoveA && !canMoveB)
                 {
@@ -125,8 +259,7 @@ namespace XYZEngine
                 }
 
                 auto movingTransform =
-                    movingCollider->GetGameObject()
-                    ->GetComponent<TransformComponent>();
+                    movingCollider->GetGameObject()->GetComponent<TransformComponent>();
 
                 if (movingTransform == nullptr)
                 {
@@ -136,23 +269,14 @@ namespace XYZEngine
                 float overlapX = intersection.width;
                 float overlapY = intersection.height;
 
-                float centerAX =
-                    colliderA->bounds.left +
-                    colliderA->bounds.width * 0.5f;
+                float centerAX = colliderA->bounds.left + colliderA->bounds.width * 0.5f;
 
-                float centerAY =
-                    colliderA->bounds.top +
-                    colliderA->bounds.height * 0.5f;
+                float centerAY = colliderA->bounds.top + colliderA->bounds.height * 0.5f;
 
-                float centerBX =
-                    colliderB->bounds.left +
-                    colliderB->bounds.width * 0.5f;
+                float centerBX = colliderB->bounds.left + colliderB->bounds.width * 0.5f;
 
-                float centerBY =
-                    colliderB->bounds.top +
-                    colliderB->bounds.height * 0.5f;
+                float centerBY = colliderB->bounds.top + colliderB->bounds.height * 0.5f;
 
-                
                 if (overlapX < overlapY)
                 {
                     float direction;
@@ -166,10 +290,7 @@ namespace XYZEngine
                         direction = centerBX < centerAX ? -1.f : 1.f;
                     }
 
-                    movingTransform->MoveBy(
-                        direction * overlapX,
-                        0.f
-                    );
+                    movingTransform->MoveBy(direction * overlapX, 0.f);
                 }
                 else
                 {
@@ -184,13 +305,9 @@ namespace XYZEngine
                         direction = centerBY < centerAY ? -1.f : 1.f;
                     }
 
-                    movingTransform->MoveBy(
-                        0.f,
-                        direction * overlapY
-                    );
+                    movingTransform->MoveBy(0.f, direction * overlapY);
                 }
 
-                
                 if (bodyA != nullptr && !bodyA->GetKinematic())
                 {
                     auto velocity = bodyA->GetLinearVelocity();
@@ -223,26 +340,19 @@ namespace XYZEngine
                     bodyB->SetLinearVelocity(velocity);
                 }
 
-                Collision collision(
-                    colliderA,
-                    colliderB,
-                    intersection
-                );
+                Collision collision(colliderA, colliderB, intersection);
 
                 colliderA->OnCollision(collision);
                 colliderB->OnCollision(collision);
             }
         }
 
-        
-        for (auto it = triggersEnteredPair.begin();
-            it != triggersEnteredPair.end();)
+        for (auto it = triggersEnteredPair.begin(); it != triggersEnteredPair.end();)
         {
             ColliderComponent* first = it->first;
             ColliderComponent* second = it->second;
 
-            if (first == nullptr || second == nullptr ||
-                !first->bounds.intersects(second->bounds))
+            if (first == nullptr || second == nullptr || !first->bounds.intersects(second->bounds))
             {
                 if (first != nullptr && second != nullptr)
                 {
@@ -268,10 +378,7 @@ namespace XYZEngine
             return;
         }
 
-        if (std::find(
-            colliders.begin(),
-            colliders.end(),
-            collider) == colliders.end())
+        if (std::find(colliders.begin(), colliders.end(), collider) == colliders.end())
         {
             colliders.push_back(collider);
         }
@@ -279,17 +386,9 @@ namespace XYZEngine
 
     void PhysicsSystem::Unsubscribe(ColliderComponent* collider)
     {
-        colliders.erase(
-            std::remove(
-                colliders.begin(),
-                colliders.end(),
-                collider
-            ),
-            colliders.end()
-        );
+        colliders.erase(std::remove(colliders.begin(), colliders.end(), collider), colliders.end());
 
-        for (auto it = triggersEnteredPair.begin();
-            it != triggersEnteredPair.end();)
+        for (auto it = triggersEnteredPair.begin(); it != triggersEnteredPair.end();)
         {
             if (it->first == collider || it->second == collider)
             {
@@ -301,4 +400,4 @@ namespace XYZEngine
             }
         }
     }
-}
+} // namespace XYZEngine

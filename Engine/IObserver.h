@@ -1,8 +1,8 @@
 #pragma once
 
+#include <algorithm>
 #include <memory>
 #include <vector>
-#include <algorithm>
 
 class IObserver;
 
@@ -19,19 +19,16 @@ protected:
     {
         auto self = shared_from_this();
 
-        std::for_each(
-            observers.begin(),
-            observers.end(),
-            [self](auto observer)
-            {
-                auto lockedObserver = observer.lock();
+        std::for_each(observers.begin(), observers.end(),
+                      [self](auto observer)
+                      {
+                          auto lockedObserver = observer.lock();
 
-                if (lockedObserver)
-                {
-                    lockedObserver->Notify(self);
-                }
-            }
-        );
+                          if (lockedObserver)
+                          {
+                              lockedObserver->Notify(self);
+                          }
+                      });
     }
 
 private:

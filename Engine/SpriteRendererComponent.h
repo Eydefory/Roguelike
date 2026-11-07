@@ -36,4 +36,4 @@ namespace XYZEngine
         bool isFlipX = false;
         bool isFlipY = false;
     };
-}
+} // namespace XYZEngine

@@ -1,13 +1,12 @@
 #include "pch.h"
 #include "Engine.h"
 #include "GameWorld.h"
-#include "RenderSystem.h"
 #include "Loger.h"
+#include "RenderSystem.h"
 
-#include <iostream>
+#include <cassert>
 #include <cstdlib>
 #include <ctime>
-#include <cassert>
 
 namespace XYZEngine
 {
@@ -19,8 +18,7 @@ namespace XYZEngine
 
     Engine::Engine()
     {
-        unsigned int seed =
-            static_cast<unsigned int>(time(nullptr));
+        unsigned int seed = static_cast<unsigned int>(time(nullptr));
 
         srand(seed);
 
@@ -34,48 +32,41 @@ namespace XYZEngine
         sf::Clock gameClock;
         sf::Event event;
 
-        while (RenderSystem::Instance()
-            ->GetMainWindow().isOpen())
+        while (RenderSystem::Instance()->GetMainWindow().isOpen())
         {
             sf::Time dt = gameClock.restart();
             float deltaTime = dt.asSeconds();
 
             assert(deltaTime >= 0.f);
 
-            while (RenderSystem::Instance()
-                ->GetMainWindow().pollEvent(event))
+            while (RenderSystem::Instance()->GetMainWindow().pollEvent(event))
             {
                 if (event.type == sf::Event::Closed)
                 {
                     LOG_INFO("Window close event");
-                    RenderSystem::Instance()
-                        ->GetMainWindow().close();
+                    RenderSystem::Instance()->GetMainWindow().close();
                 }
             }
 
-            if (!RenderSystem::Instance()
-                ->GetMainWindow().isOpen())
+            if (!RenderSystem::Instance()->GetMainWindow().isOpen())
             {
                 break;
             }
 
             try
             {
-                RenderSystem::Instance()
-                    ->GetMainWindow().clear();
+                RenderSystem::Instance()->GetMainWindow().clear();
 
                 GameWorld::Instance()->Update(deltaTime);
                 GameWorld::Instance()->FixedUpdate(deltaTime);
                 GameWorld::Instance()->Render();
                 GameWorld::Instance()->LateUpdate();
 
-                RenderSystem::Instance()
-                    ->GetMainWindow().display();
+                RenderSystem::Instance()->GetMainWindow().display();
             }
             catch (const std::exception& exception)
             {
-                LOG_ERROR(std::string("Engine frame exception: ") +
-                    exception.what());
+                LOG_ERROR(std::string("Engine frame exception: ") + exception.what());
             }
             catch (...)
             {
@@ -85,4 +76,4 @@ namespace XYZEngine
 
         LOG_INFO("Engine loop stopped");
     }
-}
+} // namespace XYZEngine

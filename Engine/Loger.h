@@ -1,13 +1,13 @@
 
 #pragma once
 
-#include <iostream>
 #include <fstream>
-#include <string>
-#include <vector>
-#include <mutex>
-#include <unordered_map>
+#include <iostream>
 #include <memory>
+#include <mutex>
+#include <string>
+#include <unordered_map>
+#include <vector>
 
 enum class LogLevel
 {
@@ -27,10 +27,14 @@ inline std::string LogLevelToString(LogLevel level)
 {
     switch (level)
     {
-    case LogLevel::Info: return "[INFO]";
-    case LogLevel::Warning: return "[WARNING]";
-    case LogLevel::Error: return "[ERROR]";
-    default: return "[UNKNOWN]";
+    case LogLevel::Info:
+        return "[INFO]";
+    case LogLevel::Warning:
+        return "[WARNING]";
+    case LogLevel::Error:
+        return "[ERROR]";
+    default:
+        return "[UNKNOWN]";
     }
 }
 
@@ -39,8 +43,11 @@ class ConsoleSink : public LogSink
 public:
     void log(LogLevel level, const std::string& message) override
     {
-        std::cout << LogLevelToString(level)
-            << " " << message << std::endl;
+        std::cout << LogLevelToString(level) << " " << message << '\n';
+        if (level == LogLevel::Error)
+        {
+            std::cout.flush();
+        }
     }
 };
 
@@ -57,8 +64,11 @@ public:
         if (!logFile.is_open())
             return;
 
-        logFile << LogLevelToString(level)
-            << " " << message << std::endl;
+        logFile << LogLevelToString(level) << " " << message << '\n';
+        if (level == LogLevel::Error)
+        {
+            logFile.flush();
+        }
     }
 
     bool IsOpen() const
@@ -151,9 +161,7 @@ public:
         defaultLogger = logger;
     }
 
-    void registerLogger(
-        const std::string& name,
-        std::shared_ptr<Logger> logger)
+    void registerLogger(const std::string& name, std::shared_ptr<Logger> logger)
     {
         if (name.empty() || !logger)
             return;
@@ -177,4 +185,3 @@ private:
 #define LOG_INFO(message) LoggerRegistry::getInstance().getLogger("global")->info(message)
 #define LOG_WARN(message) LoggerRegistry::getInstance().getLogger("global")->warn(message)
 #define LOG_ERROR(message) LoggerRegistry::getInstance().getLogger("global")->error(message)
-
