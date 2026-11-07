@@ -33,8 +33,8 @@ namespace XYZRoguelike
 
             const int textureWidth = static_cast<int>(texture->getSize().x);
             const int textureHeight = static_cast<int>(texture->getSize().y);
-            fill.setTextureRect(sf::IntRect(0, 0, std::max(0, static_cast<int>(textureWidth * percent)),
-                                            textureHeight));
+            fill.setTextureRect(sf::IntRect(
+                0, 0, std::max(0, static_cast<int>(textureWidth * percent)), textureHeight));
         }
     } // namespace
 
