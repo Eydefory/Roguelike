@@ -1,0 +1,24 @@
+name: Build Game Solution
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Set up MSBuild
+        uses: microsoft/setup-msbuild@v3
+
+      - name: Build game
+        run: msbuild Game.sln /t:SFMLTemplate /p:Configuration=Release /p:Platform=x64
