@@ -1,11 +1,11 @@
 #pragma once
 
+#include "EngineAPI.h"
+#include "Vector.h"
+#include <array>
 #include <cmath>
 #include <iostream>
 #include <vector>
-#include <array>
-#include "Vector.h"
-#include "EngineAPI.h"
 
 namespace XYZEngine
 {
@@ -13,9 +13,8 @@ namespace XYZEngine
     {
     public:
         Matrix2D();
-        Matrix2D(float a00, float a01, float a02,
-            float a10, float a11, float a12,
-            float a20, float a21, float a22);
+        Matrix2D(float a00, float a01, float a02, float a10, float a11, float a12, float a20,
+                 float a21, float a22);
 
         Matrix2D(Vector2Df position, float angle, Vector2Df scale);
 
@@ -28,4 +27,4 @@ namespace XYZEngine
     private:
         std::array<std::array<float, 3>, 3> m;
     };
-}
+} // namespace XYZEngine

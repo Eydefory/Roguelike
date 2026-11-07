@@ -5,11 +5,13 @@ namespace XYZRoguelike
     constexpr unsigned int SCREEN_WIDTH = 1280;
     constexpr unsigned int SCREEN_HEIGHT = 720;
 
-    constexpr float TILE_SIZE = 64.f;
+    constexpr float TILE_SIZE = 56.f;
     constexpr float HALF_TILE = TILE_SIZE * 0.5f;
 
-    constexpr int ROOM_COLUMNS = 20;
-    constexpr int ROOM_ROWS = 11;
+    constexpr int ROOM_COLUMNS = 23;
+    constexpr int ROOM_ROWS = 13;
+    constexpr unsigned int INVENTORY_SLOT_COUNT = 12;
+    constexpr int TOTAL_LEVEL_COUNT = 3;
 
     constexpr float ROOM_OFFSET_X = 0.f;
     constexpr float ROOM_OFFSET_Y = 8.f;
@@ -17,7 +19,24 @@ namespace XYZRoguelike
     constexpr float PLAYER_WIDTH = 48.f;
     constexpr float PLAYER_HEIGHT = 48.f;
     constexpr float PLAYER_SPEED = 250.f;
-
+    constexpr int PLAYER_MAX_HEALTH = 100;
+    constexpr int PLAYER_STARTING_ARMOR = 5;
+    constexpr int PLAYER_ATTACK_DAMAGE = 20;
+    constexpr int PLAYER_BOW_DAMAGE = 25;
+    constexpr float PLAYER_ATTACK_COOLDOWN = 0.5f;
+    constexpr float PLAYER_ATTACK_RANGE = 72.f;
+    constexpr float PLAYER_BOW_RANGE = 650.f;
+    constexpr float PLAYER_PROJECTILE_SPEED = 520.f;
+    constexpr int PLAYER_HEALING_POTION_AMOUNT = 40;
+    constexpr int PLAYER_SHIELD_POTION_AMOUNT = 40;
+    constexpr float PLAYER_STAMINA_POTION_DURATION = 5.f;
+    constexpr float ITEM_PICKUP_RANGE = 38.f;
+    constexpr float DOOR_INTERACTION_RANGE = 90.f;
+    constexpr float PLAYER_SPRINT_SPEED_MULTIPLIER = 1.5f;
+    constexpr float PLAYER_MAX_STAMINA = 100.f;
+    constexpr float PLAYER_STAMINA_DRAIN_PER_SECOND = 35.f;
+    constexpr float PLAYER_STAMINA_REGEN_PER_SECOND = 22.f;
+    constexpr float PLAYER_STAMINA_REGEN_DELAY = 0.6f;
     constexpr float ENEMY_WIDTH = 48.f;
     constexpr float ENEMY_HEIGHT = 48.f;
     constexpr float ENEMY_SPEED = 120.f;

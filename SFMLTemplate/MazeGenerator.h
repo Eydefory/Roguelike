@@ -17,6 +17,7 @@ namespace XYZRoguelike
 
         // Returns world-space tile centers for cells that are not walls.
         std::vector<std::pair<float, float>> GetWalkablePositions() const;
+        const std::vector<std::vector<bool>>& GetGrid() const;
 
     private:
         int width;

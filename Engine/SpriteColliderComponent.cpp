@@ -6,13 +6,11 @@ namespace XYZEngine
     SpriteColliderComponent::SpriteColliderComponent(GameObject* gameObject)
         : ColliderComponent(gameObject)
     {
-        auto spriteRenderer =
-            gameObject->GetComponent<SpriteRendererComponent>();
+        auto spriteRenderer = gameObject->GetComponent<SpriteRendererComponent>();
 
         if (spriteRenderer == nullptr)
         {
-            std::cout << "SpriteRenderer required to SpriteCollider."
-                << std::endl;
+            std::cout << "SpriteRenderer required to SpriteCollider." << std::endl;
 
             gameObject->RemoveComponent(this);
             return;
@@ -30,8 +28,7 @@ namespace XYZEngine
 
     void SpriteColliderComponent::Update(float deltaTime)
     {
-        auto spriteRenderer =
-            gameObject->GetComponent<SpriteRendererComponent>();
+        auto spriteRenderer = gameObject->GetComponent<SpriteRendererComponent>();
 
         if (spriteRenderer == nullptr || sprite == nullptr)
         {
@@ -45,15 +42,5 @@ namespace XYZEngine
 
     void SpriteColliderComponent::Render()
     {
-        sf::RectangleShape rectangle(
-            sf::Vector2f(bounds.width, bounds.height)
-        );
-
-        rectangle.setPosition(bounds.left, bounds.top);
-        rectangle.setFillColor(sf::Color::Transparent);
-        rectangle.setOutlineColor(sf::Color::White);
-        rectangle.setOutlineThickness(4.f);
-
-        RenderSystem::Instance()->Render(rectangle);
     }
-}
+} // namespace XYZEngine

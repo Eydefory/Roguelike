@@ -23,4 +23,4 @@ namespace XYZEngine
         RenderSystem(const RenderSystem&) = delete;
         RenderSystem& operator=(const RenderSystem&) = delete;
     };
-}
+} // namespace XYZEngine

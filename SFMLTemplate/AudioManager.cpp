@@ -1,5 +1,7 @@
 #include "AudioManager.h"
 
+#include <algorithm>
+
 namespace XYZRoguelike
 {
     AudioManager& AudioManager::Instance()
@@ -14,13 +16,31 @@ namespace XYZRoguelike
             return;
 
         music.setLoop(true);
-        music.setVolume(40.f);
+        music.setVolume(volume);
         music.play();
     }
 
     void AudioManager::StopMusic()
     {
         music.stop();
+    }
+
+    void AudioManager::SetVolume(float newVolume)
+    {
+        volume = std::clamp(newVolume, 0.f, 100.f);
+        music.setVolume(volume);
+        for (auto& sound : sounds)
+        {
+            if (sound.second != nullptr)
+            {
+                sound.second->setVolume(volume);
+            }
+        }
+    }
+
+    float AudioManager::GetVolume() const
+    {
+        return volume;
     }
 
     void AudioManager::SetSoundBuffer(const std::string& name, const sf::SoundBuffer* buffer)
@@ -30,6 +50,7 @@ namespace XYZRoguelike
 
         auto sound = std::make_unique<sf::Sound>();
         sound->setBuffer(*buffer);
+        sound->setVolume(volume);
 
         sounds[name] = std::move(sound);
     }

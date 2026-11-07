@@ -6,7 +6,8 @@
 
 namespace XYZEngine
 {
-    void InitSprite(sf::Sprite& sprite, float desiredWidth, float desiredHeight, const sf::Texture& texture)
+    void InitSprite(sf::Sprite& sprite, float desiredWidth, float desiredHeight,
+                    const sf::Texture& texture)
     {
         sprite.setTexture(texture);
         SetSpriteRelativeOrigin(sprite, 0.5f, 0.5f);
@@ -18,15 +19,18 @@ namespace XYZEngine
         window.draw(sprite);
     }
 
-    sf::Vector2f GetRandomSpritePositionInRectangle(const sf::Sprite& sprite, const sf::FloatRect& rect)
+    sf::Vector2f GetRandomSpritePositionInRectangle(const sf::Sprite& sprite,
+                                                    const sf::FloatRect& rect)
     {
         sf::Vector2f result;
 
         const auto spriteWidth = sprite.getGlobalBounds().width;
         const auto spriteHeight = sprite.getGlobalBounds().height;
 
-        result.x = rand() / static_cast<float>(RAND_MAX) * (rect.width - 2 * spriteWidth) + rect.left + spriteWidth;
-        result.y = rand() / static_cast<float>(RAND_MAX) * (rect.height - 2 * spriteHeight) + rect.top + spriteHeight;
+        result.x = rand() / static_cast<float>(RAND_MAX) * (rect.width - 2 * spriteWidth) +
+                   rect.left + spriteWidth;
+        result.y = rand() / static_cast<float>(RAND_MAX) * (rect.height - 2 * spriteHeight) +
+                   rect.top + spriteHeight;
 
         return result;
     }
@@ -35,10 +39,7 @@ namespace XYZEngine
     {
         sf::FloatRect spriteRect = sprite.getGlobalBounds();
 
-        sf::Vector2f scale = {
-            desiredWidth / spriteRect.width,
-            desiredHeight / spriteRect.height
-        };
+        sf::Vector2f scale = {desiredWidth / spriteRect.width, desiredHeight / spriteRect.height};
 
         sprite.setScale(scale);
     }
@@ -47,13 +48,11 @@ namespace XYZEngine
     {
         sf::FloatRect spriteRect = sprite.getGlobalBounds();
 
-        sprite.setOrigin(
-            originX * spriteRect.width,
-            originY * spriteRect.height
-        );
+        sprite.setOrigin(originX * spriteRect.width, originY * spriteRect.height);
     }
 
-    void SetSpriteRandomPosition(sf::Sprite& sprite, const sf::FloatRect& rect, const std::list<sf::Sprite>& collection)
+    void SetSpriteRandomPosition(sf::Sprite& sprite, const sf::FloatRect& rect,
+                                 const std::list<sf::Sprite>& collection)
     {
     }
 
@@ -76,10 +75,11 @@ namespace XYZEngine
         return result;
     }
 
-    float GetManhattanDistanceBetweenSprites(const sf::Sprite& spriteFrom, const sf::Sprite& spriteTo)
+    float GetManhattanDistanceBetweenSprites(const sf::Sprite& spriteFrom,
+                                             const sf::Sprite& spriteTo)
     {
         const auto result = spriteTo.getPosition() - spriteFrom.getPosition();
 
         return std::fabs(result.x) + std::fabs(result.y);
     }
-}
+} // namespace XYZEngine

@@ -1,18 +1,17 @@
 #include "pch.h"
 #include "SpriteRendererComponent.h"
-#include "TransformComponent.h"
 #include "RenderSystem.h"
+#include "TransformComponent.h"
 
 namespace XYZEngine
 {
-    SpriteRendererComponent::SpriteRendererComponent(GameObject* gameObject)
-        : Component(gameObject)
+    SpriteRendererComponent::SpriteRendererComponent(GameObject* gameObject) : Component(gameObject)
     {
         sprite = new sf::Sprite();
 
-        scale = { 1.f, 1.f };
+        scale = {1.f, 1.f};
 
-        sprite->setScale({ 1.f, 1.f });
+        sprite->setScale({1.f, 1.f});
 
         transform = gameObject->GetComponent<TransformComponent>();
     }
@@ -34,23 +33,13 @@ namespace XYZEngine
             return;
         }
 
-        sprite->setPosition(
-            Convert<sf::Vector2f, Vector2Df>(
-                transform->GetWorldPosition()
-            )
-        );
+        sprite->setPosition(Convert<sf::Vector2f, Vector2Df>(transform->GetWorldPosition()));
 
         sprite->setRotation(transform->GetWorldRotation());
 
-        auto transformScale =
-            Convert<sf::Vector2f, Vector2Df>(
-                transform->GetWorldScale()
-            );
+        auto transformScale = Convert<sf::Vector2f, Vector2Df>(transform->GetWorldScale());
 
-        sprite->setScale({
-            scale.x * transformScale.x,
-            scale.y * transformScale.y
-            });
+        sprite->setScale({scale.x * transformScale.x, scale.y * transformScale.y});
     }
 
     void SpriteRendererComponent::Render()
@@ -76,10 +65,7 @@ namespace XYZEngine
 
         auto textureSize = sprite->getTexture()->getSize();
 
-        sprite->setOrigin({
-            0.5f * textureSize.x,
-            0.5f * textureSize.y
-            });
+        sprite->setOrigin({0.5f * textureSize.x, 0.5f * textureSize.y});
     }
 
     void SpriteRendererComponent::SetPixelSize(int newWidth, int newHeight)
@@ -91,10 +77,8 @@ namespace XYZEngine
             return;
         }
 
-        scale = {
-            static_cast<float>(newWidth) / static_cast<float>(originalSize.x),
-            static_cast<float>(newHeight) / static_cast<float>(originalSize.y)
-        };
+        scale = {static_cast<float>(newWidth) / static_cast<float>(originalSize.x),
+                 static_cast<float>(newHeight) / static_cast<float>(originalSize.y)};
     }
 
     void SpriteRendererComponent::FlipX(bool flip)
@@ -114,4 +98,4 @@ namespace XYZEngine
             isFlipY = flip;
         }
     }
-}
+} // namespace XYZEngine

@@ -17,7 +17,6 @@ namespace XYZEngine
     void GameWorld::Update(float deltaTime)
     {
         assert(deltaTime >= 0.f);
-        
 
         for (auto* gameObject : gameObjects)
         {
@@ -27,33 +26,71 @@ namespace XYZEngine
                 continue;
             }
 
+            if (std::find(markedToDestroyGameObjects.begin(), markedToDestroyGameObjects.end(),
+                          gameObject) != markedToDestroyGameObjects.end())
+            {
+                continue;
+            }
+
             try
             {
+            if (paused)
+            {
+                gameObject->UpdateOverlay(deltaTime);
+            }
+            else
+            {
                 gameObject->Update(deltaTime);
-                
+            }
             }
             catch (const std::exception& exception)
             {
-                LOG_ERROR(std::string("GameObject Update exception: ") +
-                    exception.what());
+                LOG_ERROR(std::string("GameObject Update exception: ") + exception.what());
             }
             catch (...)
             {
                 LOG_ERROR("Unknown GameObject Update exception");
             }
         }
+
+        std::vector<std::function<void()>> actions;
+        actions.swap(postUpdateActions);
+        for (auto& action : actions)
+        {
+            if (!action)
+            {
+                continue;
+            }
+
+            try
+            {
+                action();
+            }
+            catch (const std::exception& exception)
+            {
+                LOG_ERROR(std::string("Post-update action exception: ") + exception.what());
+            }
+            catch (...)
+            {
+                LOG_ERROR("Unknown post-update action exception");
+            }
+        }
     }
 
     void GameWorld::FixedUpdate(float deltaTime)
     {
+        if (paused)
+        {
+            return;
+        }
+
         assert(deltaTime >= 0.f);
 
         try
         {
             fixedCounter += deltaTime;
 
-            float fixedDeltaTime =
-                PhysicsSystem::Instance()->GetFixedDeltaTime();
+            float fixedDeltaTime = PhysicsSystem::Instance()->GetFixedDeltaTime();
 
             if (fixedDeltaTime <= 0.f)
             {
@@ -71,8 +108,7 @@ namespace XYZEngine
                 }
                 catch (const std::exception& exception)
                 {
-                    LOG_ERROR(std::string("Physics exception: ") +
-                        exception.what());
+                    LOG_ERROR(std::string("Physics exception: ") + exception.what());
                 }
                 catch (...)
                 {
@@ -82,8 +118,7 @@ namespace XYZEngine
         }
         catch (const std::exception& exception)
         {
-            LOG_ERROR(std::string("FixedUpdate exception: ") +
-                exception.what());
+            LOG_ERROR(std::string("FixedUpdate exception: ") + exception.what());
         }
         catch (...)
         {
@@ -101,29 +136,55 @@ namespace XYZEngine
                 continue;
             }
 
+            if (std::find(markedToDestroyGameObjects.begin(), markedToDestroyGameObjects.end(),
+                          gameObject) != markedToDestroyGameObjects.end())
+            {
+                continue;
+            }
+
             try
             {
                 gameObject->Render();
             }
             catch (const std::exception& exception)
             {
-                LOG_ERROR(std::string("Render exception: ") +
-                    exception.what());
+                LOG_ERROR(std::string("Render exception: ") + exception.what());
             }
             catch (...)
             {
                 LOG_ERROR("Unknown Render exception");
             }
         }
+
+        for (auto* gameObject : gameObjects)
+        {
+            if (gameObject == nullptr ||
+                std::find(markedToDestroyGameObjects.begin(), markedToDestroyGameObjects.end(),
+                          gameObject) != markedToDestroyGameObjects.end())
+            {
+                continue;
+            }
+
+            try
+            {
+                gameObject->RenderOverlay();
+            }
+            catch (const std::exception& exception)
+            {
+                LOG_ERROR(std::string("Overlay render exception: ") + exception.what());
+            }
+            catch (...)
+            {
+                LOG_ERROR("Unknown overlay render exception");
+            }
+        }
     }
 
     void GameWorld::LateUpdate()
     {
-        for (int i = static_cast<int>(
-            markedToDestroyGameObjects.size()) - 1; i >= 0; --i)
+        for (int i = static_cast<int>(markedToDestroyGameObjects.size()) - 1; i >= 0; --i)
         {
-            DestroyGameObjectImmediate(
-                markedToDestroyGameObjects[i]);
+            DestroyGameObjectImmediate(markedToDestroyGameObjects[i]);
         }
     }
 
@@ -152,6 +213,19 @@ namespace XYZEngine
         return newGameObject;
     }
 
+    void GameWorld::MoveGameObjectToEnd(GameObject* gameObject)
+    {
+        const auto object = std::find(gameObjects.begin(), gameObjects.end(), gameObject);
+        if (gameObject == nullptr || object == gameObjects.end())
+        {
+            LOG_WARN("MoveGameObjectToEnd received an unregistered GameObject");
+            return;
+        }
+
+        gameObjects.erase(object);
+        gameObjects.push_back(gameObject);
+    }
+
     void GameWorld::DestroyGameObject(GameObject* gameObject)
     {
         if (gameObject == nullptr)
@@ -160,19 +234,14 @@ namespace XYZEngine
             return;
         }
 
-        if (std::find(
-            gameObjects.begin(),
-            gameObjects.end(),
-            gameObject) == gameObjects.end())
+        if (std::find(gameObjects.begin(), gameObjects.end(), gameObject) == gameObjects.end())
         {
             LOG_WARN("GameObject is not registered in GameWorld");
             return;
         }
 
-        if (std::find(
-            markedToDestroyGameObjects.begin(),
-            markedToDestroyGameObjects.end(),
-            gameObject) != markedToDestroyGameObjects.end())
+        if (std::find(markedToDestroyGameObjects.begin(), markedToDestroyGameObjects.end(),
+                      gameObject) != markedToDestroyGameObjects.end())
         {
             LOG_WARN("GameObject already marked for destruction");
             return;
@@ -185,18 +254,41 @@ namespace XYZEngine
 
     void GameWorld::Clear()
     {
-        LOG_INFO("Clearing GameWorld");
+        ClearExcept(nullptr);
+        paused = false;
+    }
 
-        for (int i = static_cast<int>(gameObjects.size()) - 1;
-            i >= 0; --i)
+    void GameWorld::ClearExcept(GameObject* preservedRoot)
+    {
+        ClearExcept(preservedRoot, nullptr);
+    }
+
+    void GameWorld::ClearExcept(GameObject* firstPreservedRoot, GameObject* secondPreservedRoot)
+    {
+        LOG_INFO(firstPreservedRoot == nullptr && secondPreservedRoot == nullptr
+                     ? "Clearing GameWorld"
+                     : "Clearing GameWorld except preserved roots");
+
+        if (std::find(gameObjects.begin(), gameObjects.end(), firstPreservedRoot) ==
+            gameObjects.end())
+        {
+            firstPreservedRoot = nullptr;
+        }
+        if (std::find(gameObjects.begin(), gameObjects.end(), secondPreservedRoot) ==
+            gameObjects.end())
+        {
+            secondPreservedRoot = nullptr;
+        }
+
+        for (int i = static_cast<int>(gameObjects.size()) - 1; i >= 0; --i)
         {
             auto* gameObject = gameObjects[i];
 
-            if (gameObject == nullptr)
+            if (gameObject == nullptr || gameObject == firstPreservedRoot ||
+                gameObject == secondPreservedRoot)
                 continue;
 
-            auto* transform =
-                gameObject->GetComponent<TransformComponent>();
+            auto* transform = gameObject->GetComponent<TransformComponent>();
 
             if (transform == nullptr)
             {
@@ -209,9 +301,34 @@ namespace XYZEngine
                 DestroyGameObjectImmediate(gameObject);
         }
 
+        markedToDestroyGameObjects.erase(
+            std::remove_if(markedToDestroyGameObjects.begin(), markedToDestroyGameObjects.end(),
+                           [firstPreservedRoot, secondPreservedRoot](GameObject* object)
+                           { return object == firstPreservedRoot || object == secondPreservedRoot; }),
+            markedToDestroyGameObjects.end());
+
         fixedCounter = 0.f;
+        postUpdateActions.clear();
 
         LOG_INFO("GameWorld cleared");
+    }
+
+    void GameWorld::ScheduleAfterUpdate(std::function<void()> action)
+    {
+        if (action)
+        {
+            postUpdateActions.push_back(std::move(action));
+        }
+    }
+
+    void GameWorld::SetPaused(bool shouldPause)
+    {
+        paused = shouldPause;
+    }
+
+    bool GameWorld::IsPaused() const
+    {
+        return paused;
     }
 
     void GameWorld::Print() const
@@ -221,8 +338,7 @@ namespace XYZEngine
             if (gameObject == nullptr)
                 continue;
 
-            auto* transform =
-                gameObject->GetComponent<TransformComponent>();
+            auto* transform = gameObject->GetComponent<TransformComponent>();
 
             if (transform == nullptr)
                 continue;
@@ -232,28 +348,24 @@ namespace XYZEngine
         }
     }
 
-    void GameWorld::DestroyGameObjectImmediate(
-        GameObject* gameObject)
+    void GameWorld::DestroyGameObjectImmediate(GameObject* gameObject)
     {
         if (gameObject == nullptr)
             return;
 
-        auto* transform =
-            gameObject->GetComponent<TransformComponent>();
+        auto* transform = gameObject->GetComponent<TransformComponent>();
 
         if (transform == nullptr)
         {
             LOG_WARN("Destroying GameObject without Transform");
 
-            gameObjects.erase(
-                std::remove(gameObjects.begin(),
-                    gameObjects.end(), gameObject),
-                gameObjects.end());
+            gameObjects.erase(std::remove(gameObjects.begin(), gameObjects.end(), gameObject),
+                              gameObjects.end());
 
-            markedToDestroyGameObjects.erase(
-                std::remove(markedToDestroyGameObjects.begin(),
-                    markedToDestroyGameObjects.end(), gameObject),
-                markedToDestroyGameObjects.end());
+            markedToDestroyGameObjects.erase(std::remove(markedToDestroyGameObjects.begin(),
+                                                         markedToDestroyGameObjects.end(),
+                                                         gameObject),
+                                             markedToDestroyGameObjects.end());
 
             delete gameObject;
             return;
@@ -264,8 +376,7 @@ namespace XYZEngine
         if (parent != nullptr)
             parent->GetGameObject()->RemoveChild(gameObject);
 
-        auto transforms =
-            gameObject->GetComponentsInChildren<TransformComponent>();
+        auto transforms = gameObject->GetComponentsInChildren<TransformComponent>();
 
         for (auto* childTransform : transforms)
         {
@@ -274,20 +385,17 @@ namespace XYZEngine
 
             auto* objectToDelete = childTransform->GetGameObject();
 
-            gameObjects.erase(
-                std::remove(gameObjects.begin(),
-                    gameObjects.end(), objectToDelete),
-                gameObjects.end());
+            gameObjects.erase(std::remove(gameObjects.begin(), gameObjects.end(), objectToDelete),
+                              gameObjects.end());
 
-            markedToDestroyGameObjects.erase(
-                std::remove(markedToDestroyGameObjects.begin(),
-                    markedToDestroyGameObjects.end(), objectToDelete),
-                markedToDestroyGameObjects.end());
+            markedToDestroyGameObjects.erase(std::remove(markedToDestroyGameObjects.begin(),
+                                                         markedToDestroyGameObjects.end(),
+                                                         objectToDelete),
+                                             markedToDestroyGameObjects.end());
 
             delete objectToDelete;
         }
 
         LOG_INFO("GameObject destroyed");
     }
-}
-
+} // namespace XYZEngine

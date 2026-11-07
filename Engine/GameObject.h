@@ -1,17 +1,18 @@
 #pragma once
 
-#include "EngineAPI.h"
 #include "Component.h"
-#include "TransformComponent.h"
+#include "EngineAPI.h"
 #include "Loger.h"
+#include "TransformComponent.h"
 
-#include <iostream>
-#include <string>
-#include <vector>
 #include <algorithm>
-#include <type_traits>
 #include <cassert>
+#include <iostream>
 #include <stdexcept>
+#include <string>
+#include <type_traits>
+#include <utility>
+#include <vector>
 
 namespace XYZEngine
 {
@@ -28,13 +29,14 @@ namespace XYZEngine
         void Print(int depth = 0) const;
 
         void Update(float deltaTime);
+        void UpdateOverlay(float deltaTime);
         void Render();
+        void RenderOverlay();
 
-        template <typename T>
-        T* AddComponent()
+        template <typename T, typename... Args> T* AddComponent(Args&&... args)
         {
             static_assert(std::is_base_of<Component, T>::value,
-                "T must be derived from Component.");
+                          "T must be derived from Component.");
 
             assert(!name.empty());
 
@@ -44,14 +46,13 @@ namespace XYZEngine
                 {
                     LOG_ERROR("Cannot add duplicate TransformComponent");
 
-                    throw std::runtime_error(
-                        "GameObject already has TransformComponent");
+                    throw std::runtime_error("GameObject already has TransformComponent");
                 }
             }
 
             try
             {
-                T* newComponent = new T(this);
+                T* newComponent = new T(this, std::forward<Args>(args)...);
 
                 if (newComponent == nullptr)
                 {
@@ -67,8 +68,7 @@ namespace XYZEngine
             }
             catch (const std::exception& exception)
             {
-                LOG_ERROR(std::string("AddComponent failed: ") +
-                    exception.what());
+                LOG_ERROR(std::string("AddComponent failed: ") + exception.what());
 
                 throw;
             }
@@ -82,10 +82,7 @@ namespace XYZEngine
                 return;
             }
 
-            auto it = std::find(
-                components.begin(),
-                components.end(),
-                component);
+            auto it = std::find(components.begin(), components.end(), component);
 
             if (it != components.end())
             {
@@ -100,8 +97,7 @@ namespace XYZEngine
             }
         }
 
-        template <typename T>
-        T* GetComponent() const
+        template <typename T> T* GetComponent() const
         {
             for (const auto& component : components)
             {
@@ -112,8 +108,7 @@ namespace XYZEngine
             return nullptr;
         }
 
-        template <typename T>
-        T* GetComponentInChildren() const
+        template <typename T> T* GetComponentInChildren() const
         {
             T* component = GetComponent<T>();
 
@@ -122,8 +117,7 @@ namespace XYZEngine
 
             for (const auto& child : children)
             {
-                T* childComponent =
-                    child->GetComponentInChildren<T>();
+                T* childComponent = child->GetComponentInChildren<T>();
 
                 if (childComponent != nullptr)
                     return childComponent;
@@ -132,8 +126,7 @@ namespace XYZEngine
             return nullptr;
         }
 
-        template <typename T>
-        std::vector<T*> GetComponents() const
+        template <typename T> std::vector<T*> GetComponents() const
         {
             std::vector<T*> result;
 
@@ -146,8 +139,7 @@ namespace XYZEngine
             return result;
         }
 
-        template <typename T>
-        std::vector<T*> GetComponentsInChildren() const
+        template <typename T> std::vector<T*> GetComponentsInChildren() const
         {
             std::vector<T*> result;
 
@@ -156,8 +148,7 @@ namespace XYZEngine
 
             for (const auto& child : children)
             {
-                for (const auto& childComponent :
-                    child->GetComponentsInChildren<T>())
+                for (const auto& childComponent : child->GetComponentsInChildren<T>())
                 {
                     result.push_back(childComponent);
                 }
@@ -178,4 +169,4 @@ namespace XYZEngine
         void AddChild(GameObject* child);
         void RemoveChild(GameObject* child);
     };
-}
+} // namespace XYZEngine

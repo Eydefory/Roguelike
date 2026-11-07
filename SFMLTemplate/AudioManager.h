@@ -14,6 +14,8 @@ namespace XYZRoguelike
 
         void PlayMusic(const std::string& path);
         void StopMusic();
+        void SetVolume(float volume);
+        float GetVolume() const;
 
         void PlaySound(const std::string& name);
         void SetSoundBuffer(const std::string& name, const sf::SoundBuffer* buffer);
@@ -23,5 +25,6 @@ namespace XYZRoguelike
 
         sf::Music music;
         std::map<std::string, std::unique_ptr<sf::Sound>> sounds;
+        float volume = 40.f;
     };
 } // namespace XYZRoguelike

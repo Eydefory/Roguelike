@@ -3,10 +3,16 @@
 #include "Constants.h"
 #include "EnemyContainer.h"
 #include "HealthBarComponent.h"
+#include "InventoryComponent.h"
+#include "InventoryHudComponent.h"
 #include "Loger.h"
+#include "PlayerAnimationComponent.h"
 #include "PlayerAttackComponent.h"
 #include "PlayerMovementComponent.h"
+#include "PotionSpawnerComponent.h"
+#include "QuestHudComponent.h"
 #include "RigidbodyComponent.h"
+#include "StaminaComponent.h"
 
 namespace XYZRoguelike
 {
@@ -22,30 +28,45 @@ namespace XYZRoguelike
         if (texture != nullptr)
         {
             renderer->SetTexture(*texture);
-            renderer->SetPixelSize(PLAYER_WIDTH, PLAYER_HEIGHT);
+            renderer->SetPixelSize(static_cast<int>(PLAYER_WIDTH), static_cast<int>(PLAYER_HEIGHT));
         }
 
         gameObject->AddComponent<XYZEngine::SpriteColliderComponent>();
 
-        gameObject->AddComponent<XYZEngine::RigidbodyComponent>();
+        gameObject->AddComponent<XYZEngine::RigidbodyComponent>()->SetKinematic(true);
 
         gameObject->AddComponent<XYZEngine::InputComponent>();
 
+        auto health = gameObject->AddComponent<HealthComponent>();
+
+        health->Initialize(PLAYER_MAX_HEALTH, PLAYER_STARTING_ARMOR);
+
+        auto* inventory = gameObject->AddComponent<InventoryComponent>();
+        inventory->AddItem(ItemType::Sword);
+        inventory->SelectSlot(0);
+
+        gameObject->AddComponent<StaminaComponent>();
+
+        gameObject->AddComponent<HealthBarComponent>();
+
+        gameObject->AddComponent<QuestHudComponent>();
+
+        gameObject->AddComponent<InventoryHudComponent>();
+
         gameObject->AddComponent<PlayerMovementComponent>();
+
+        gameObject->AddComponent<PlayerAnimationComponent>();
 
         gameObject->AddComponent<PlayerAttackComponent>();
 
-        auto health = gameObject->AddComponent<HealthComponent>();
-
-        health->Initialize(100, 25);
-
-        gameObject->AddComponent<HealthBarComponent>();
+        gameObject->AddComponent<PotionSpawnerComponent>();
 
         auto camera = gameObject->AddComponent<XYZEngine::CameraComponent>();
 
         camera->SetWindow(&XYZEngine::RenderSystem::Instance()->GetMainWindow());
 
         camera->SetBaseResolution(SCREEN_WIDTH, SCREEN_HEIGHT);
+        camera->ZoomBy(0.85f);
 
         gameObject->GetComponent<XYZEngine::TransformComponent>()->SetWorldPosition(
             SCREEN_WIDTH / 2.f, SCREEN_HEIGHT / 2.f);
@@ -70,6 +91,14 @@ namespace XYZRoguelike
         auto attack = gameObject->GetComponent<PlayerAttackComponent>();
 
         if (attack != nullptr)
+        {
             attack->SetEnemyContainer(container);
+        }
+
+        auto* questHud = gameObject->GetComponent<QuestHudComponent>();
+        if (questHud != nullptr)
+        {
+            questHud->SetEnemyContainer(container);
+        }
     }
 } // namespace XYZRoguelike

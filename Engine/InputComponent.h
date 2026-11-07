@@ -1,7 +1,7 @@
 #pragma once
 
-#include "EngineAPI.h"
 #include "Component.h"
+#include "EngineAPI.h"
 #include <SFML/Window.hpp>
 
 namespace XYZEngine
@@ -21,4 +21,4 @@ namespace XYZEngine
         float horizontalAxis = 0.f;
         float verticalAxis = 0.f;
     };
-}
+} // namespace XYZEngine

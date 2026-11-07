@@ -30,4 +30,4 @@ namespace XYZEngine
     {
         GetMainWindow().draw(drawable);
     }
-}
+} // namespace XYZEngine

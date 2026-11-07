@@ -1,5 +1,6 @@
 #include "EnemyAttackComponent.h"
 #include "HealthComponent.h"
+#include "InventoryHudComponent.h"
 #include "Loger.h"
 #include "TransformComponent.h"
 
@@ -35,10 +36,14 @@ namespace XYZRoguelike
 
     void EnemyAttackComponent::Update(float deltaTime)
     {
-        attackTimer += deltaTime;
-
         if (target == nullptr)
             return;
+
+        auto* inventoryHud = target->GetComponent<InventoryHudComponent>();
+        if (inventoryHud != nullptr && inventoryHud->IsOpen())
+            return;
+
+        attackTimer += deltaTime;
 
         auto enemyHealth = gameObject->GetComponent<HealthComponent>();
 
@@ -72,7 +77,7 @@ namespace XYZRoguelike
 
         attackTimer = 0.f;
 
-        playerHealth->TakeDamage(attackDamage);
+        playerHealth->TakeHit(attackDamage);
 
         LOG_INFO("Enemy attacked player");
     }

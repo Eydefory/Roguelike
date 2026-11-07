@@ -16,6 +16,9 @@
     <ClCompile Include="DeveloperLevel.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
+    <ClCompile Include="DoorComponent.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
     <ClCompile Include="AudioManager.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
@@ -43,6 +46,9 @@
     <ClCompile Include="FloorContainer.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
+    <ClCompile Include="GameFlowComponent.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
     <ClCompile Include="PlayerMovementComponent.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
@@ -55,10 +61,34 @@
     <ClCompile Include="HealthBarComponent.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
+    <ClCompile Include="InventoryComponent.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="InventoryHudComponent.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemPickupComponent.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerAnimationComponent.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="PotionSpawnerComponent.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectileComponent.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="StaminaComponent.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
     <ClCompile Include="EnemyAttackComponent.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
     <ClCompile Include="MazeGenerator.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="QuestHudComponent.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
   </ItemGroup>
@@ -74,6 +104,7 @@
     </ClInclude>
     <ClInclude Include="Player.h" />
     <ClInclude Include="DeveloperLevel.h" />
+    <ClInclude Include="DoorComponent.h" />
     <ClInclude Include="AudioManager.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="EnemySearchComponent.h" />
@@ -81,6 +112,7 @@
     <ClInclude Include="WallContainer.h" />
     <ClInclude Include="Floor.h" />
     <ClInclude Include="FloorContainer.h" />
+    <ClInclude Include="GameFlowComponent.h" />
     <ClInclude Include="PlayerMovementComponent.h" />
     <ClInclude Include="EnemyContainer.h" />
     <ClInclude Include="HealthComponent.h">
@@ -88,7 +120,16 @@
     </ClInclude>
     <ClInclude Include="PlayerAttackComponent.h" />
     <ClInclude Include="HealthBarComponent.h" />
+    <ClInclude Include="InventoryComponent.h" />
+    <ClInclude Include="InventoryHudComponent.h" />
+    <ClInclude Include="ItemPickupComponent.h" />
+    <ClInclude Include="LevelManager.h" />
+    <ClInclude Include="PlayerAnimationComponent.h" />
+    <ClInclude Include="PotionSpawnerComponent.h" />
+    <ClInclude Include="ProjectileComponent.h" />
+    <ClInclude Include="StaminaComponent.h" />
     <ClInclude Include="EnemyAttackComponent.h" />
     <ClInclude Include="MazeGenerator.h" />
+    <ClInclude Include="QuestHudComponent.h" />
   </ItemGroup>
 </Project>

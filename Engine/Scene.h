@@ -9,4 +9,4 @@ namespace XYZEngine
         virtual void Restart() = 0;
         virtual void Stop() = 0;
     };
-}
+} // namespace XYZEngine

@@ -3,10 +3,7 @@
 
 namespace XYZEngine
 {
-    InputComponent::InputComponent(GameObject* gameObject)
-        : Component(gameObject)
-    {
-    }
+    InputComponent::InputComponent(GameObject* gameObject) : Component(gameObject) {}
 
     void InputComponent::Update(float deltaTime)
     {
@@ -34,9 +31,7 @@ namespace XYZEngine
         }
     }
 
-    void InputComponent::Render()
-    {
-    }
+    void InputComponent::Render() {}
 
     float InputComponent::GetHorizontalAxis() const
     {
@@ -47,4 +42,4 @@ namespace XYZEngine
     {
         return verticalAxis;
     }
-}
+} // namespace XYZEngine

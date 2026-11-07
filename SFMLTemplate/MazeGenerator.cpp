@@ -105,6 +105,11 @@ namespace XYZRoguelike
         return positions;
     }
 
+    const std::vector<std::vector<bool>>& MazeGenerator::GetGrid() const
+    {
+        return grid;
+    }
+
     std::vector<std::pair<int, int>> MazeGenerator::GetAvailableDirections(int x, int y)
     {
         std::vector<std::pair<int, int>> directions = {{0, -2}, {0, 2}, {-2, 0}, {2, 0}};
@@ -156,8 +161,8 @@ namespace XYZRoguelike
                 if (!grid[y][x])
                     continue;
 
-                walls->AddWall(std::make_unique<Wall>(static_cast<float>(x), static_cast<float>(y),
-                                                      "wall_top"));
+                walls->AddWall(
+                    std::make_unique<Wall>(static_cast<float>(x), static_cast<float>(y)));
             }
         }
 
