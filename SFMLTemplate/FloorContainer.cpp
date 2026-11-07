@@ -6,7 +6,8 @@
 
 namespace XYZRoguelike
 {
-    FloorContainer::FloorContainer()
+    FloorContainer::FloorContainer(int exitCellX, int exitCellY)
+        : exitCellX(exitCellX), exitCellY(exitCellY)
     {
         CreateFloor();
     }
@@ -24,6 +25,17 @@ namespace XYZRoguelike
 
                 tiles.push_back(std::make_unique<Floor>(worldX, worldY, TILE_SIZE));
             }
+        }
+
+        const bool exitIsOnBorder = exitCellX >= 0 && exitCellX < ROOM_COLUMNS && exitCellY >= 0 &&
+                                    exitCellY < ROOM_ROWS &&
+                                    (exitCellX == 0 || exitCellX == ROOM_COLUMNS - 1 ||
+                                     exitCellY == 0 || exitCellY == ROOM_ROWS - 1);
+        if (exitIsOnBorder)
+        {
+            const float worldX = ROOM_OFFSET_X + exitCellX * TILE_SIZE;
+            const float worldY = ROOM_OFFSET_Y + exitCellY * TILE_SIZE;
+            tiles.push_back(std::make_unique<Floor>(worldX, worldY, TILE_SIZE));
         }
 
         LOG_INFO("FloorContainer: floor created");

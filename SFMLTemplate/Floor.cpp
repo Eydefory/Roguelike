@@ -4,6 +4,9 @@
 #include "SpriteRendererComponent.h"
 #include "TransformComponent.h"
 
+#include <array>
+#include <random>
+
 namespace XYZRoguelike
 {
     Floor::Floor(float x, float y, float size)
@@ -12,8 +15,11 @@ namespace XYZRoguelike
 
         auto* renderer = gameObject->AddComponent<XYZEngine::SpriteRendererComponent>();
 
-        const sf::Texture* texture =
-            XYZEngine::ResourceSystem::Instance()->GetTextureShared("floor");
+        static std::mt19937 randomEngine(std::random_device{}());
+        static const std::array<const char*, 2> textureNames = {"floor_variant_1", "floor_variant_2"};
+        std::uniform_int_distribution<std::size_t> chooseTexture(0, textureNames.size() - 1);
+        const sf::Texture* texture = XYZEngine::ResourceSystem::Instance()->GetTextureShared(
+            textureNames[chooseTexture(randomEngine)]);
 
         if (texture != nullptr)
         {

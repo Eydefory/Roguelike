@@ -5,6 +5,7 @@
 namespace XYZRoguelike
 {
     class EnemyContainer;
+    class InventoryHudComponent;
 
     class PlayerAttackComponent : public XYZEngine::Component
     {
@@ -17,6 +18,9 @@ namespace XYZRoguelike
         void SetEnemyContainer(EnemyContainer* container);
 
     private:
+        void AttackWithSword(InventoryHudComponent* hud);
+        void FireBow(InventoryHudComponent* hud);
+
         EnemyContainer* enemyContainer;
         float attackCooldown;
         float attackTimer;

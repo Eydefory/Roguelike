@@ -1,14 +1,12 @@
 #pragma once
 
 #include "GameWorld.h"
-#include <string>
-
 namespace XYZRoguelike
 {
     class Wall
     {
     public:
-        Wall(float cellX, float cellY, const std::string& textureName);
+        Wall(float cellX, float cellY);
 
         XYZEngine::GameObject* GetGameObject() const;
 

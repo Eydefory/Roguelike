@@ -3,6 +3,8 @@
 #include "Component.h"
 #include "TransformComponent.h"
 
+#include <vector>
+
 namespace XYZRoguelike
 {
     class EnemySearchComponent : public XYZEngine::Component
@@ -15,6 +17,7 @@ namespace XYZRoguelike
 
         void SetTarget(XYZEngine::GameObject* target);
         void SetMovementSettings(float detectionRadius, float movementSpeed, float stopDistance);
+        void SetNavigationGrid(const std::vector<std::vector<bool>>& grid);
 
         bool IsTargetDetected() const;
 
@@ -28,5 +31,6 @@ namespace XYZRoguelike
         float stopDistance;
 
         bool targetDetected;
+        std::vector<std::vector<bool>> navigationGrid;
     };
 } // namespace XYZRoguelike

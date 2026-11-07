@@ -50,10 +50,10 @@ namespace XYZRoguelike
         if (texture != nullptr)
         {
             renderer->SetTexture(*texture);
-            renderer->SetPixelSize(ENEMY_WIDTH, ENEMY_HEIGHT);
+            renderer->SetPixelSize(static_cast<int>(ENEMY_WIDTH), static_cast<int>(ENEMY_HEIGHT));
         }
 
-        gameObject->AddComponent<XYZEngine::RigidbodyComponent>();
+        gameObject->AddComponent<XYZEngine::RigidbodyComponent>()->SetKinematic(true);
         gameObject->AddComponent<XYZEngine::SpriteColliderComponent>();
 
         auto* search = gameObject->AddComponent<EnemySearchComponent>();
