@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: windows-2025-vs2026
 
     steps:
       - name: Checkout code
@@ -22,3 +22,13 @@ jobs:
 
       - name: Build game
         run: msbuild Game.sln /t:SFMLTemplate /p:Configuration=Release /p:Platform=x64
+
+      - name: Package game
+        shell: pwsh
+        run: ./package-release.ps1
+
+      - name: Upload release archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: XYZ-Roguelike-windows-x64
+          path: release/XYZ-Roguelike.zip
