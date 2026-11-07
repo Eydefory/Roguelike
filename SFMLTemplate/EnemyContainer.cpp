@@ -1,9 +1,9 @@
 #include "EnemyContainer.h"
 
 #include "Constants.h"
+#include "EnemySearchComponent.h"
 #include "GameWorld.h"
 #include "Loger.h"
-#include "EnemySearchComponent.h"
 #include "TransformComponent.h"
 
 #include <algorithm>
@@ -155,8 +155,8 @@ namespace XYZRoguelike
         return nearestEnemy;
     }
 
-    Enemy* EnemyContainer::GetEnemyHitBySegment(float startX, float startY, float endX,
-                                                float endY, float projectileHalfWidth,
+    Enemy* EnemyContainer::GetEnemyHitBySegment(float startX, float startY, float endX, float endY,
+                                                float projectileHalfWidth,
                                                 float projectileHalfHeight) const
     {
         const float segmentX = endX - startX;
@@ -183,8 +183,8 @@ namespace XYZRoguelike
             const auto position = transform->GetWorldPosition();
             float entry = 0.f;
             float exit = 1.f;
-            const auto clipAxis = [&entry, &exit](float origin, float delta, float minimum,
-                                                  float maximum)
+            const auto clipAxis =
+                [&entry, &exit](float origin, float delta, float minimum, float maximum)
             {
                 if (std::abs(delta) < 0.0001f)
                 {
@@ -202,12 +202,11 @@ namespace XYZRoguelike
                 return entry <= exit;
             };
 
-            const bool intersects =
-                clipAxis(startX, segmentX, position.x - targetHalfWidth,
-                         position.x + targetHalfWidth) &&
-                clipAxis(startY, segmentY, position.y - targetHalfHeight,
-                         position.y + targetHalfHeight) &&
-                exit >= 0.f && entry <= 1.f;
+            const bool intersects = clipAxis(startX, segmentX, position.x - targetHalfWidth,
+                                             position.x + targetHalfWidth) &&
+                                    clipAxis(startY, segmentY, position.y - targetHalfHeight,
+                                             position.y + targetHalfHeight) &&
+                                    exit >= 0.f && entry <= 1.f;
             if (intersects && entry < nearestAlongSegment)
             {
                 nearestAlongSegment = entry;

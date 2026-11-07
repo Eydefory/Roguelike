@@ -25,8 +25,8 @@ namespace XYZRoguelike
 
             if (exitCellX != x || exitCellY != ROOM_ROWS - 1)
             {
-                walls.push_back(
-                    std::make_unique<Wall>(static_cast<float>(x), static_cast<float>(ROOM_ROWS - 1)));
+                walls.push_back(std::make_unique<Wall>(static_cast<float>(x),
+                                                       static_cast<float>(ROOM_ROWS - 1)));
             }
         }
 

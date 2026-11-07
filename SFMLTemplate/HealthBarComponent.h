@@ -17,7 +17,6 @@ namespace XYZRoguelike
 
         void Update(float deltaTime) override;
         void Render() override;
-        void SetLevelNumber(int levelNumber);
         bool IsOverlay() const override
         {
             return true;
@@ -27,18 +26,12 @@ namespace XYZRoguelike
         sf::Sprite panel;
         sf::Sprite healthBarFrame;
         sf::Sprite healthFill;
-        sf::Sprite shieldIcon;
+        sf::Sprite sprintBarFrame;
+        sf::Sprite sprintFill;
         std::array<sf::Sprite, 5> shieldIcons;
-        std::array<sf::RectangleShape, 3> meterFrames;
-        std::array<sf::RectangleShape, 3> meterFills;
 
         HealthComponent* healthComponent;
         StaminaComponent* staminaComponent;
-        sf::Font font;
-        std::array<sf::Text, 3> meterLabels;
-        sf::Text title;
-        int currentLevel = 1;
-        bool fontLoaded = false;
 
         void UpdateBars();
     };

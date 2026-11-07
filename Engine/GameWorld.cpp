@@ -34,14 +34,14 @@ namespace XYZEngine
 
             try
             {
-            if (paused)
-            {
-                gameObject->UpdateOverlay(deltaTime);
-            }
-            else
-            {
-                gameObject->Update(deltaTime);
-            }
+                if (paused)
+                {
+                    gameObject->UpdateOverlay(deltaTime);
+                }
+                else
+                {
+                    gameObject->Update(deltaTime);
+                }
             }
             catch (const std::exception& exception)
             {
@@ -302,9 +302,10 @@ namespace XYZEngine
         }
 
         markedToDestroyGameObjects.erase(
-            std::remove_if(markedToDestroyGameObjects.begin(), markedToDestroyGameObjects.end(),
-                           [firstPreservedRoot, secondPreservedRoot](GameObject* object)
-                           { return object == firstPreservedRoot || object == secondPreservedRoot; }),
+            std::remove_if(
+                markedToDestroyGameObjects.begin(), markedToDestroyGameObjects.end(),
+                [firstPreservedRoot, secondPreservedRoot](GameObject* object)
+                { return object == firstPreservedRoot || object == secondPreservedRoot; }),
             markedToDestroyGameObjects.end());
 
         fixedCounter = 0.f;

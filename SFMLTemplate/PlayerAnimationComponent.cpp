@@ -15,17 +15,25 @@ namespace XYZRoguelike
     {
         auto* resources = XYZEngine::ResourceSystem::Instance();
         frames[static_cast<std::size_t>(Facing::Front)] = {
-            resources->GetTextureShared("player_walk_1"), resources->GetTextureShared("player_walk_2"),
-            resources->GetTextureShared("player_walk_3"), resources->GetTextureShared("player_idle")};
+            resources->GetTextureShared("player_walk_1"),
+            resources->GetTextureShared("player_walk_2"),
+            resources->GetTextureShared("player_walk_3"),
+            resources->GetTextureShared("player_idle")};
         frames[static_cast<std::size_t>(Facing::Back)] = {
-            resources->GetTextureShared("player_back_walk_01"), resources->GetTextureShared("player_back_walk_02"),
-            resources->GetTextureShared("player_back_walk_03"), resources->GetTextureShared("player_back_idle")};
+            resources->GetTextureShared("player_back_walk_01"),
+            resources->GetTextureShared("player_back_walk_02"),
+            resources->GetTextureShared("player_back_walk_03"),
+            resources->GetTextureShared("player_back_idle")};
         frames[static_cast<std::size_t>(Facing::Left)] = {
-            resources->GetTextureShared("player_left_walk_01"), resources->GetTextureShared("player_left_walk_02"),
-            resources->GetTextureShared("player_left_walk_03"), resources->GetTextureShared("player_left_idle")};
+            resources->GetTextureShared("player_left_walk_01"),
+            resources->GetTextureShared("player_left_walk_02"),
+            resources->GetTextureShared("player_left_walk_03"),
+            resources->GetTextureShared("player_left_idle")};
         frames[static_cast<std::size_t>(Facing::Right)] = {
-            resources->GetTextureShared("player_right_walk_01"), resources->GetTextureShared("player_right_walk_02"),
-            resources->GetTextureShared("player_right_walk_03"), resources->GetTextureShared("player_right_idle")};
+            resources->GetTextureShared("player_right_walk_01"),
+            resources->GetTextureShared("player_right_walk_02"),
+            resources->GetTextureShared("player_right_walk_03"),
+            resources->GetTextureShared("player_right_idle")};
         renderer = gameObject->GetComponent<XYZEngine::SpriteRendererComponent>();
         ApplyFrame(3);
     }
@@ -46,8 +54,7 @@ namespace XYZRoguelike
 
         animationTimer += deltaTime;
         constexpr float FRAME_DURATION = 0.12f;
-        const auto frameIndex =
-            static_cast<std::size_t>(animationTimer / FRAME_DURATION) % 3;
+        const auto frameIndex = static_cast<std::size_t>(animationTimer / FRAME_DURATION) % 3;
         ApplyFrame(frameIndex);
     }
 
@@ -91,7 +98,8 @@ namespace XYZRoguelike
     void PlayerAnimationComponent::ApplyFrame(std::size_t frameIndex)
     {
         const auto& directionFrames = frames[static_cast<std::size_t>(facing)];
-        if (renderer == nullptr || frameIndex >= directionFrames.size() || directionFrames[frameIndex] == nullptr ||
+        if (renderer == nullptr || frameIndex >= directionFrames.size() ||
+            directionFrames[frameIndex] == nullptr ||
             (currentFrame == frameIndex && currentFacing == facing))
         {
             return;
