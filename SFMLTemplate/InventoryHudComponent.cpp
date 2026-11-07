@@ -2,6 +2,7 @@
 
 #include "Constants.h"
 #include "GameObject.h"
+#include "GameWorld.h"
 #include "Loger.h"
 #include "RenderSystem.h"
 #include "ResourceSystem.h"
@@ -166,15 +167,17 @@ namespace XYZRoguelike
 
     void InventoryHudComponent::Update(float deltaTime)
     {
+        const bool inputEnabled = !XYZEngine::GameWorld::Instance()->IsPaused();
+
         const bool inventoryKeyPressed = sf::Keyboard::isKeyPressed(sf::Keyboard::I);
-        if (inventoryKeyPressed && !inventoryKeyWasPressed)
+        if (inputEnabled && inventoryKeyPressed && !inventoryKeyWasPressed)
         {
             panelOpen = !panelOpen;
         }
         inventoryKeyWasPressed = inventoryKeyPressed;
 
         const bool closeKeyPressed = sf::Keyboard::isKeyPressed(sf::Keyboard::Escape);
-        if (closeKeyPressed && !closeKeyWasPressed && panelOpen)
+        if (inputEnabled && closeKeyPressed && !closeKeyWasPressed && panelOpen)
         {
             panelOpen = false;
         }
@@ -193,7 +196,7 @@ namespace XYZRoguelike
         {
             const bool pressed = sf::Keyboard::isKeyPressed(numberKeys[index]) ||
                                  sf::Keyboard::isKeyPressed(numpadKeys[index]);
-            if (pressed && !numberKeyWasPressed[index])
+            if (inputEnabled && pressed && !numberKeyWasPressed[index])
             {
                 SelectSlot(index);
             }
@@ -202,7 +205,7 @@ namespace XYZRoguelike
 
         auto& window = XYZEngine::RenderSystem::Instance()->GetMainWindow();
         const bool mousePressed = sf::Mouse::isButtonPressed(sf::Mouse::Left);
-        if (mousePressed && !mouseWasPressed)
+        if (inputEnabled && mousePressed && !mouseWasPressed)
         {
             const auto mousePixel = sf::Mouse::getPosition(window);
             const auto mousePosition = window.mapPixelToCoords(mousePixel, window.getDefaultView());
@@ -238,7 +241,7 @@ namespace XYZRoguelike
         mouseWasPressed = mousePressed;
 
         const bool useKeyPressed = sf::Keyboard::isKeyPressed(sf::Keyboard::F);
-        if (useKeyPressed && !useKeyWasPressed)
+        if (inputEnabled && useKeyPressed && !useKeyWasPressed)
         {
             UseSelectedItem();
         }
